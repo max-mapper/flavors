@@ -7,7 +7,7 @@ function setResults(objs) {
   objs.map(function(obj) {
     htmls += '<li class="topcoat-list__item">'
       + '<span class="title">' + obj.title + '</span>'
-      + ' - pairs with <span class="description">' + obj.description + '</span>'
+      + ' - eat with <span class="description">' + obj.description + '</span>'
     + '</li>'
   })
   results.innerHTML += htmls
