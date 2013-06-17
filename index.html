@@ -6,12 +6,25 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height=device-width, target-densitydpi=device-dpi">
     <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-mobile-light.css">
+    <link rel="stylesheet" type="text/css" href="snap.css">
     <style type="text/css">
       .title { font-weight: bold; }
       h2, input { float: left; }
       h2 { margin-left: 20px; margin-right: 20px; }
-      input { padding: 5px 10px; }
-      .link { line-height: 40px; float: right; margin: 0px 10px; }
+      input { padding: 5px 10px; width: 310px; }
+      .about, .about a { color: #c6c8c8; }
+      .about p { padding: 0px 15px; }
+      .snap-content { background: #dfe2e2; }
+      .cooking-pot {
+        background-image: url(cooking-pot.png);
+        width: 27px;
+        height: 27px;
+        display: inline-block;
+        background-size: 27px;
+        margin-bottom: -5px;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+      }
     </style>
     <title>Flavors</title>
     <script type="text/javascript">
@@ -2511,11 +2524,46 @@
   </head>
   
   <body>
-    <div class="app js-app">
+    <div class="snap-drawers">
+      <div class="snap-drawer snap-drawer-left">
+          <div>
+              <h4>Search By:</h4>
+              <ul class="search-by">
+                <li><a data-prefix="eat with" data-title="ingredients" data-search="ingredients" href="#">Ingredient</a></li>
+                <li><a data-prefix="combine with" data-title="seasonings" data-search="seasonings" href="#">Seasoning</a></li>
+                <li><a data-prefix="tastes like" data-title="regions" data-search="regions" href="#">Region</a></li>
+              </ul>
+              <div class="about">
+                  <p>made by max ogden. 
+                    <a class="link" target="_blank" href="https://github.com/maxogden/flavors">view source on github</a>
+                  </p>
+                  <p>Data compiled by <a target="_blank" href="http://www.reddit.com/r/Chefit/comments/1g3ie7/culinary_artistry_in_easily_accessible/">Hi_Im_Michael_P</a> from the book <a target="_blank" href="https://www.powells.com/biblio/9780471287858">Culinary Artistry</a></p>
+                  <p><a href="http://thenounproject.com/noun/cooking-pot/#icon-No11241" target="_blank">Cooking Pot</a> designed by <a href="http://thenounproject.com/squidfingers" target="_blank">Travis Beckham</a> from The Noun Project
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="app js-app snap-content" id="content">
+      <div class="topcoat-navigation-bar">
+          <div class="topcoat-navigation-bar__item left quarter open-menu">
+              <a class="topcoat-icon-button--quiet" id="open-left">
+                <span class="topcoat-icon topcoat-icon--menu-stack"></span>
+              </a>
+          </div>
+          <div class="topcoat-navigation-bar__item center half">
+              <h1 class="topcoat-navigation-bar__title"><span class="cooking-pot"></span>Flavors</h1>
+          </div>
+          <div class="topcoat-navigation-bar__item right quarter">
+              <a class="topcoat-icon-button--quiet">
+                <span class="topcoat-icon topcoat-icon--edit">
+                </span>
+              </a>
+          </div>
+      </div>
       <div class="topcoat-list__container">
-        <h2>Flavors</h2>
-        <input type="text"  value="" placeholder="filter..." class="topcoat-search-input--large">
-        <p><a class="link" target="_blank" href="https://github.com/maxogden/flavors">view source on github</a></p>
+        <input type="search"  value="" placeholder="filter..." class="topcoat-search-input--large">
       </div>
       <div class="topcoat-list__container">
         <h3 class="topcoat-list__header column-header"></h3>
@@ -2523,9 +2571,8 @@
         </ul>
       </div>
     </div>
-    <div class="topcoat-list__container">
-      <p>Data compiled by <a target="_blank" href="http://www.reddit.com/r/Chefit/comments/1g3ie7/culinary_artistry_in_easily_accessible/">Hi_Im_Michael_P</a> from the book <a target="_blank" href="https://www.powells.com/biblio/9780471287858">Culinary Artistry</a></p>
-    </div>
+    
+    <script type="text/javascript" src="snap.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 
