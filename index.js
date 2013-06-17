@@ -17,7 +17,7 @@ function setResults(objs) {
 function filterResults(objs, str) {
   var matches = []
   objs.map(function(obj) {
-    if (obj.title.toLowerCase().match(str.toLowerCase())) matches.push(obj)
+    if (obj.title.trim().toLowerCase().match(str.trim().toLowerCase())) matches.push(obj)
   })
   return matches
 }
