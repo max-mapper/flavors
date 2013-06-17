@@ -1,0 +1,2526 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height=device-width, target-densitydpi=device-dpi">
+    <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-mobile-light.css">
+    <style type="text/css">
+      .title { font-weight: bold; }
+      h2, input { float: left; }
+      h2 { margin-left: 20px; margin-right: 20px; }
+    </style>
+    <title>Flavors</title>
+    <script type="text/javascript">
+      var flavors = {
+        "seasonings": [
+          {
+            "seasoning": "achiote",
+            "complements": "chicken, fish, meat (white), pork, rice",
+            "rownumber": 1
+          },
+          {
+            "seasoning": "allspice",
+            "complements": "beef, beets, cabbage, carrots, corned beef, fruit pies, game, grains, lamb, meats, onions, pumpkin, rabbit, soups, spinach, squash, stews, sweet potatoes, tomatoes, turnips",
+            "rownumber": 2
+          },
+          {
+            "seasoning": "anchovy",
+            "complements": "caesar salad, pissaladiere, pizza potatoes, puttanesca, tapenade",
+            "rownumber": 3
+          },
+          {
+            "seasoning": "aniseed",
+            "complements": "beets, breads, cabbage, carrots, cauliflower, desserts, fish, melon, sauerkraut, seafood",
+            "rownumber": 4
+          },
+          {
+            "seasoning": "basil",
+            "complements": "cheese (especially mozzarella and parmesan), chicken, duck, eggplant, eggs, fish, lamb, liver, olive oil, onions, pasta sauces, pesto, pimientos, pizza, pork, potatoes, rabbit, salad greens (especially dandelion and rocket), shellfish, especially crab and shrimp, soups, sweet peppers, tomatoes, turtle soup veal, vegetables (especially mediterranean), vinegars, zucchini",
+            "rownumber": 5
+          },
+          {
+            "seasoning": "bay leaf",
+            "complements": "beans, game, grains, lentils, pates, potatoes, risotto, shellfish, soups, stews, terrines, tomatoes",
+            "rownumber": 6
+          },
+          {
+            "seasoning": "beans, fermented black",
+            "complements": "fish, poultry, shellfish",
+            "rownumber": 7
+          },
+          {
+            "seasoning": "capers",
+            "complements": "fish, onions, tomatoes",
+            "rownumber": 8
+          },
+          {
+            "seasoning": "caraway",
+            "complements": "bread (especially rye), cabbage, cheese (especially muenster), pork, potatoes, sauerkraut, sausages, soups, turnips",
+            "rownumber": 9
+          },
+          {
+            "seasoning": "cardamom",
+            "complements": "chicken, coffee, curries, duck, lentils, meats, oranges, peas, rice squash, sweetmeats",
+            "rownumber": 10
+          },
+          {
+            "seasoning": "cassia",
+            "complements": "apples, chocolate, couscous, lentils, peas, stewed fruit",
+            "rownumber": 11
+          },
+          {
+            "seasoning": "cayenne",
+            "complements": "cheese sauces, corn, crab, eggplant, fish, lobster, onions, peppers, potatoes, rice, sardines, tomatoes",
+            "rownumber": 12
+          },
+          {
+            "seasoning": "celery seeds",
+            "complements": "eggplant, eggs, fish, peas, potatoes, stuffings, tomatoes",
+            "rownumber": 13
+          },
+          {
+            "seasoning": "chervil",
+            "complements": "asparagus, carrots, cheese, chicken, eggs, fish, peas, potatoes, salads, sauces, soups, spinach, tomatoes, veal, venison",
+            "rownumber": 14
+          },
+          {
+            "seasoning": "chiles",
+            "complements": "bananas, beans, chutneys, corn, fruit (especially citrus), ketchup, pineapple, rice",
+            "rownumber": 15
+          },
+          {
+            "seasoning": "chives",
+            "complements": "eggs, fish, potatoes, salads, shellfish, sole, soups",
+            "rownumber": 16
+          },
+          {
+            "seasoning": "chocolate, bitter",
+            "complements": "desserts, game, poultry, rabbit, seafood",
+            "rownumber": 17
+          },
+          {
+            "seasoning": "cilantro",
+            "complements": "avocado, chicken, fish, ice cream, lamb, lentils, mayonnaise, peppers, pork, rice, root vegetables, salads, salsas, shellfish, tomatoes, yogurt",
+            "rownumber": 18
+          },
+          {
+            "seasoning": "cinnamon",
+            "complements": "apples, avgolemono, berries, chicken, chocolate, coffee, custards, fruit compotes, lamb, mulled wine, oranges, pears, rice, tea, zucchini",
+            "rownumber": 19
+          },
+          {
+            "seasoning": "cinnamon basil",
+            "complements": "crème anglaise, fruit, veal",
+            "rownumber": 20
+          },
+          {
+            "seasoning": "cloves",
+            "complements": "apples, beets, game, ham, lamb, mincemeat, pumpkin, sausage, tea, tomatoes, walnuts (candied), wine (especially mulled)",
+            "rownumber": 21
+          },
+          {
+            "seasoning": "coconut",
+            "complements": "chicken, custard, fruit, oranges, shellfish",
+            "rownumber": 22
+          },
+          {
+            "seasoning": "coriander",
+            "complements": "curry, fish, ham, lamb, lentils, pork, stuffing, tomatoes, turkey",
+            "rownumber": 23
+          },
+          {
+            "seasoning": "cumin",
+            "complements": "beans, chicken couscous, curry, eggplant, fish, lamb lentils, peas, pickles, pork, potatoes, rice, sausages, soups, stews",
+            "rownumber": 24
+          },
+          {
+            "seasoning": "dill",
+            "complements": "beets, breads, cabbage, carrots, chicken, crayfish, cucumbers, cream sauces, eggs, fish, lamb, pickles, potatoes, salmon, scallops, seafood, sour cream, tomatoes, veal",
+            "rownumber": 25
+          },
+          {
+            "seasoning": "fennel",
+            "complements": "bouillabaisse, cabbage, chicken, cucumbers, duck, eggs, figs, fish, goose, herring, lentils, pork, mackerel, olives, pork, poultry, red mullet, salami, sauerkraut, sausage, sea bass, seafood, soup, suckling pig, tomatoes, veal",
+            "rownumber": 26
+          },
+          {
+            "seasoning": "fenugreek",
+            "complements": "chicken, curries, legumes, potatoes, rabbit",
+            "rownumber": 27
+          },
+          {
+            "seasoning": "garlic",
+            "complements": "beans, beef, beets, cabbage, chicken, eggplant, fish, lamb, lentils, mushrooms, pasta, pork, potatoes, rice, shellfish, spinach, tomatoes, zucchini",
+            "rownumber": 28
+          },
+          {
+            "seasoning": "ginger",
+            "complements": "carrots, chicken, chocolate, fruit, gingerbread, ham, ice cream, melon, onions, pork, pumpkin, rice, tomatoes",
+            "rownumber": 29
+          },
+          {
+            "seasoning": "horseradish",
+            "complements": "apples, beef, beets, chicken, chives, cream, crème fraiche, eggs, fish, pork, salmon, sausages, shellfish, smoked fish, sour cream, trout, walnuts, yogurt",
+            "rownumber": 30
+          },
+          {
+            "seasoning": "juniper berries",
+            "complements": "beef, cabbage, game, game birds, ham, lamb, liver, kidneys (especially veal), mutton, pates, pork, stuffings, sauerkraut, veal, venison",
+            "rownumber": 31
+          },
+          {
+            "seasoning": "lavender",
+            "complements": "fruit, ice creams, lamb, rabbit, stew",
+            "rownumber": 32
+          },
+          {
+            "seasoning": "lemon",
+            "complements": "chicken, desserts, fish, oysters, shellfish, veal",
+            "rownumber": 33
+          },
+          {
+            "seasoning": "lemongrass",
+            "complements": "chicken, fish, pork, shellfish, soups",
+            "rownumber": 34
+          },
+          {
+            "seasoning": "lemon thyme",
+            "complements": "carrots, eggs, lamb, potato puree, rabbit, salads, stews, stuffings",
+            "rownumber": 35
+          },
+          {
+            "seasoning": "lemon verbena",
+            "complements": "dessert soups, ice cream, lamb, mushrooms",
+            "rownumber": 36
+          },
+          {
+            "seasoning": "lovage",
+            "complements": "chicken, cream cheese, fish soups, greens, haricot beans, pork, potatoes, rabbit, soups, stews, veal",
+            "rownumber": 37
+          },
+          {
+            "seasoning": "maple syrup",
+            "complements": "carrots, desserts, fruit, ham, onions, pumpkins, ribs",
+            "rownumber": 38
+          },
+          {
+            "seasoning": "marjoram",
+            "complements": "brains, carrots, chicken, corn, cucumber, duck, eggs, fish, goat cheese, halibut, lamb chops, meats, mushrooms, mutton, peas, pork chops, potatoes, rabbit, ravioli, salads, soups, spinach, squash (especially summer), stuffings, tomatoes, tuna, zucchini",
+            "rownumber": 39
+          },
+          {
+            "seasoning": "mint",
+            "complements": "beans (black), carrots, chocolate, cream sauce, duck, eggplant, fish soups and stews, fruit salads, goat, ice ice creams, lamb, lemon sauce, lentils, mushrooms, oranges, peas, peppers, pilaf, pork, potatoes, rice, salsas (especially tomato), tomatoes, vegetable salads, vegetables, yogurt dressings ",
+            "rownumber": 40
+          },
+          {
+            "seasoning": "molasses",
+            "complements": "apples, baked beans, brown bread, gingerbread, walnuts",
+            "rownumber": 41
+          },
+          {
+            "seasoning": "mustard",
+            "complements": "avocado, beef, beets, cabbage, chicken, crab, fish, lamb, mussels, pigs feet, pork, rabbit, salmon, sauerkraut, sausages, steaks, vinaigrette",
+            "rownumber": 42
+          },
+          {
+            "seasoning": "nutmeg",
+            "complements": "broccoli, cabbage, carrots, cauliflower, cheese, custards, eggs, fruits, lamb, mutton, pasta, potatoes, pumpkin, raisins, ricotta cheese, rice, sausages (especially blood and pork), soufflés, spinach, stuffings, veal",
+            "rownumber": 43
+          },
+          {
+            "seasoning": "oregano",
+            "complements": "artichokes, beans, chicken, eggplant, fish and fish soups, lamb, mushrooms, pasta, peppers, pizza, pork, potatoes, quail, rabbit, sausage, tomatoes, veal, zucchini",
+            "rownumber": 44
+          },
+          {
+            "seasoning": "paprika",
+            "complements": "cauliflower, chicken, crab, fish stew, goulash, lamb, potatoes, rice, shellfish, stroganoff, veal",
+            "rownumber": 45
+          },
+          {
+            "seasoning": "parsley",
+            "complements": "chicken, eggplant, eggs, fish, game, lentils, mushrooms, mussels, pasta, peas, potatoes, poultry, rice, seafood, snails, tomatoes, zucchini",
+            "rownumber": 46
+          },
+          {
+            "seasoning": "peanuts",
+            "complements": "beef, chicken, noodles, shrimp",
+            "rownumber": 47
+          },
+          {
+            "seasoning": "pepper, black",
+            "complements": "cheese, eggs, fish, game, lamb pfeffernuesse, pork, poultry, roast beef, salad, sausages, soup, steaks, strawberries, tomatoes, veal",
+            "rownumber": 48
+          },
+          {
+            "seasoning": "pistachios",
+            "complements": "asparagus, chicken, ice cream, leeks, pasta, pates, rice, sausages",
+            "rownumber": 49
+          },
+          {
+            "seasoning": "pomegranate syrup",
+            "complements": "beef, duck, game, lamb, walnuts",
+            "rownumber": 50
+          },
+          {
+            "seasoning": "poppy seeds",
+            "complements": "breads, curries, fruit, noodles, rice",
+            "rownumber": 51
+          },
+          {
+            "seasoning": "rosemary",
+            "complements": "beans (especially dried and fava), chicken fish, oily (e.g., mackerel, sardines), game, grains, lamb, mushrooms, onions, oranges, peas, pork, potatoes, poultry, salmon, spinach, steaks, veal, suckling pig",
+            "rownumber": 52
+          },
+          {
+            "seasoning": "rosewater",
+            "complements": "cream cheese, custards, fruit salad, ices, ice creams, strawberries",
+            "rownumber": 53
+          },
+          {
+            "seasoning": "saffron",
+            "complements": "bouillabaisse, chicken, curries, fish, lamb, mussels, paella, rice, risotto, sauces, shellfish, soup, tomatoes",
+            "rownumber": 54
+          },
+          {
+            "seasoning": "sage",
+            "complements": "duck, eggplant, fish, game, goose, liver, offal, peas, pork, poultry, ravioli, roasts, stuffings, tomatoes, tuna, veal",
+            "rownumber": 55
+          },
+          {
+            "seasoning": "savory",
+            "complements": "beans, chicken livers, eggs, goat cheese, lamb, legumes, lentils, meats (grilled), peas, poultry (grilled), rabbit, soups",
+            "rownumber": 56
+          },
+          {
+            "seasoning": "sesame seeds",
+            "complements": "breads, chicken chickpeas, eggplant, fish, halvah, lamb, noodles, shellfish, tahini",
+            "rownumber": 57
+          },
+          {
+            "seasoning": "sorrel",
+            "complements": "eggs, fish, lentils, meats, poultry, shellfish, soups, stuffings",
+            "rownumber": 58
+          },
+          {
+            "seasoning": "sour cream",
+            "complements": "borscht, caviar, fruit, potatoes",
+            "rownumber": 59
+          },
+          {
+            "seasoning": "star anise",
+            "complements": "chestnuts, duck, eggs, fish, leeks, pastry, pears, pork, poultry, pumpkin, scallops, shrimp",
+            "rownumber": 60
+          },
+          {
+            "seasoning": "sumac",
+            "complements": "chicken, fish, kebabs, lentils",
+            "rownumber": 61
+          },
+          {
+            "seasoning": "tamarind",
+            "complements": "chicken, curries, fish, lamb, lentils, peaches, pears, poultry, rice",
+            "rownumber": 62
+          },
+          {
+            "seasoning": "tarragon",
+            "complements": "artichokes, béarnaise sauce, carrots, chicken, crustaceans (especially lobster), eggs, fish (especially salmon), lobster, meats (white), mushrooms, onions, potatoes, rabbit, salads, sole, spinach, stuffings, tomatoes, veal",
+            "rownumber": 63
+          },
+          {
+            "seasoning": "thyme",
+            "complements": "beef, carrots, chicken, figs, fish, goat cheese, lamb, lentils, onions, peas, pork, potatoes, soups, tomatoes, venison",
+            "rownumber": 64
+          },
+          {
+            "seasoning": "turmeric",
+            "complements": "beans, chicken, curry, lamb, lentils, meats (white), paella, rice, shellfish",
+            "rownumber": 65
+          },
+          {
+            "seasoning": "vanilla",
+            "complements": "apples, apricot, chocolate, custards, fish, fruit, ice cream, plums, shellfish, soufflés",
+            "rownumber": 66
+          },
+          {
+            "seasoning": "vinegar, balsamic",
+            "complements": "steaks, strawberries, tomatoes",
+            "rownumber": 67
+          },
+          {
+            "seasoning": "wasabi",
+            "complements": "sashimi sushi",
+            "rownumber": 68
+          }
+        ],
+        "regions": [
+          {
+            "region": "african",
+            "ingredients": "chiles, cumin, garlic, grains of paradise, peanuts",
+            "rownumber": 1
+          },
+          {
+            "region": "argentinean",
+            "ingredients": "beef, chiles, chorizo, corn, cumin, rice",
+            "rownumber": 2
+          },
+          {
+            "region": "armenian",
+            "ingredients": "parsley, yogurt",
+            "rownumber": 3
+          },
+          {
+            "region": "australian",
+            "ingredients": "fish, meats, shellfish, tropical fruits and vegetables",
+            "rownumber": 4
+          },
+          {
+            "region": "austrian",
+            "ingredients": "cream cheese, onions, paprika, poppy seeds",
+            "rownumber": 5
+          },
+          {
+            "region": "brazilian",
+            "ingredients": "beans (black), chiles, cilantro, garlic, limes, pineapples, rice, scallions",
+            "rownumber": 6
+          },
+          {
+            "region": "cajun",
+            "ingredients": "chiles, crayfish, hot sauce, seafood, tomatoes",
+            "rownumber": 7
+          },
+          {
+            "region": "canadian",
+            "ingredients": "maple",
+            "rownumber": 8
+          },
+          {
+            "region": "cantonese",
+            "ingredients": "ginger, mushrooms, nuts, pork, scallions, shark skin, soy sauce",
+            "rownumber": 9
+          },
+          {
+            "region": "caribbean",
+            "ingredients": "allspice, avocados, bananas, beans (especially red), chiles, cilantro, cinnamon, cloves, coconut, curry, garlic, ginger, guavas, jerk, limes, mace, mangoes, mint, nutmeg, okra, papayas, passion fruit, pineapples, plantains, pork, rum, seafood, sugar, sweet potatoes, tomatoes, vanilla",
+            "rownumber": 10
+          },
+          {
+            "region": "chilean",
+            "ingredients": "cilantro, corn, garlic, meats, onions, oranges, pimientos, rice, seafood, tomatoes",
+            "rownumber": 11
+          },
+          {
+            "region": "chinese",
+            "ingredients": "basil, bean sprouts, bok choy, cardamom, cassia, coriander, garlic, ginger, hoisin, mushrooms, rice, scallions, sesame, shitakes, shrimp, snow peas, soy sauce, star anise, tofu, vinegar (rice wine), wine (rice)",
+            "rownumber": 12
+          },
+          {
+            "region": "colombian",
+            "ingredients": "coconut, corn, onions, pimientos, tomatoes",
+            "rownumber": 13
+          },
+          {
+            "region": "corsican",
+            "ingredients": "broccio cheese, citrus fruits, olives, tomatoes",
+            "rownumber": 14
+          },
+          {
+            "region": "creole",
+            "ingredients": "alcohol, bananas, chiles, okra, pineapples, rum, seafood, spices, tomato",
+            "rownumber": 15
+          },
+          {
+            "region": "danish",
+            "ingredients": "butter, chives, cream, dill, potatoes, tarragon",
+            "rownumber": 16
+          },
+          {
+            "region": "dutch",
+            "ingredients": "fish, seafood",
+            "rownumber": 17
+          },
+          {
+            "region": "east indian",
+            "ingredients": "aromatics, coconuts, coriander, curry, mint, saffron, turmeric",
+            "rownumber": 18
+          },
+          {
+            "region": "english",
+            "ingredients": "bacon, cheese, cucumbers, dill, fish, game, mustard, oats, potatoes, worcestershire sauce",
+            "rownumber": 19
+          },
+          {
+            "region": "european",
+            "ingredients": "caraway, cinnamon, cloves, coriander, fennel, ginger, juniper berries, mustard, poppy seeds, saffron, sesame, vanilla",
+            "rownumber": 20
+          },
+          {
+            "region": "finnish",
+            "ingredients": "milk, mushroom",
+            "rownumber": 21
+          },
+          {
+            "region": "french",
+            "ingredients": "apples, butter, cheese, chervil, chives, cream, eggs, garlic, herbs, olive oil, parsley, stock, tarragon, truffles, wine",
+            "rownumber": 22
+          },
+          {
+            "region": "german",
+            "ingredients": "caraway seeds, dill, juniper berries, mustard, pepper, poppy seeds, sorrel, thyme, vinegar",
+            "rownumber": 23
+          },
+          {
+            "region": "greek",
+            "ingredients": "cinnamon, clove, garlic, goat cheese, honey, lemon, marjoram, mint, olive oil, olives, oregano, ouzo, parsley, rice, spinach, thyme, tomatoes, yogurt",
+            "rownumber": 24
+          },
+          {
+            "region": "hungarian",
+            "ingredients": "bacon, beets, caraway seeds, dill, mushrooms, onions, paprika, parsley, sour cream spaetzle",
+            "rownumber": 25
+          },
+          {
+            "region": "indian",
+            "ingredients": "anise, cardamom, cassia, chiles, cinnamon, cloves, coconut, coriander, cumin, curry, dill, fennel, fenugreek, garlic, ginger, lemon, lentils, mint, mustard, nigella, onions, peanuts, peas, pepper, pomegranates, poppy seeds, saffron, sesame, spinach, tamarind, turmeric, yogurt",
+            "rownumber": 26
+          },
+          {
+            "region": "indonesian",
+            "ingredients": "basil, brown sugar, chiles, cilantro, cinnamon, coconut, cumin, curry, garlic, ginger, lemongrass, lime, mint, peanuts, rice, soy sauce, sugar",
+            "rownumber": 27
+          },
+          {
+            "region": "iranian",
+            "ingredients": "almonds, aromatics, rice, saffron, yogurt",
+            "rownumber": 28
+          },
+          {
+            "region": "irish",
+            "ingredients": "cabbage, oats, oysters, potatoes, rye",
+            "rownumber": 29
+          },
+          {
+            "region": "italian",
+            "ingredients": "basil, cheese (especially mascarpone, mozzarella and parmesan), garlic, olive oil, oregano, pancetta, pasta, rosemary, spinach, tomatoes, vinegar (especially red wine)",
+            "rownumber": 30
+          },
+          {
+            "region": "jamaican",
+            "ingredients": "allspice, ginger, jerk, pepper",
+            "rownumber": 31
+          },
+          {
+            "region": "japanese",
+            "ingredients": "garlic, ginger, rice sake, scallions, sesame, shitakes, soy sauce, sugar, vinegar (rice), wasabi, wine (rice)",
+            "rownumber": 32
+          },
+          {
+            "region": "jordanian",
+            "ingredients": "marjoram, oregano, peanuts",
+            "rownumber": 33
+          },
+          {
+            "region": "korean",
+            "ingredients": "brown sugar, chiles, sesame, soy sauce",
+            "rownumber": 34
+          },
+          {
+            "region": "latin american",
+            "ingredients": "achiote, beans (red), chiles, corn, garlic, plantains, potatoes, rice",
+            "rownumber": 35
+          },
+          {
+            "region": "lebanese",
+            "ingredients": "bulgur, sesame oil",
+            "rownumber": 36
+          },
+          {
+            "region": "malaysian",
+            "ingredients": "cardamom, coconut, chiles, lemongrass",
+            "rownumber": 37
+          },
+          {
+            "region": "mediterranean",
+            "ingredients": "anchovies, coriander, garlic, olive oil, parsley, tomatoes",
+            "rownumber": 38
+          },
+          {
+            "region": "mexican",
+            "ingredients": "avocados, beans, chiles, chocolate, cilantro, cinnamon, corn, cumin, epazote, garlic, lime, peppers, pork, rice, scallions, tomatoes, vanilla",
+            "rownumber": 39
+          },
+          {
+            "region": "middle eastern",
+            "ingredients": "anise, chiles, cilantro, cinnamon, coriander, cumin, dill, eggplant, fennel, fenugreek, garlic, honey, lemon, mint, olive oil, oregano, parsley, pignoli, pomegranates, poppy seeds, saffron, sesame, sumac, tahini, tamarind, tomato, yogurt",
+            "rownumber": 40
+          },
+          {
+            "region": "moroccan",
+            "ingredients": "almonds, chickpeas, cilantro, cinnamon, coriander, couscous, cumin, eggplant, fruit, ginger, harissa, lemon (dried), mint, olives, onions, saffron, tomato",
+            "rownumber": 41
+          },
+          {
+            "region": "north african",
+            "ingredients": "coriander, cumin, fenugreek, garlic, grains of paradise, lemon, mint, ras el hanout, saffron",
+            "rownumber": 42
+          },
+          {
+            "region": "norwegian",
+            "ingredients": "cod, dill, herring, salmon, sour cream",
+            "rownumber": 43
+          },
+          {
+            "region": "pakistani",
+            "ingredients": "fruit, legumes, rice, spices",
+            "rownumber": 44
+          },
+          {
+            "region": "peruvian",
+            "ingredients": "chiles, corn, lime, onions, tomatoes",
+            "rownumber": 45
+          },
+          {
+            "region": "philippine",
+            "ingredients": "garlic, rice, soy sauce, vinegar",
+            "rownumber": 46
+          },
+          {
+            "region": "polish",
+            "ingredients": "dill, fish, kielbasa, mushrooms, potatoes, sauerkraut, sour cream",
+            "rownumber": 47
+          },
+          {
+            "region": "portuguese",
+            "ingredients": "cabbage, chiles, chorizo, cilantro, cod, eggs, garlic, olive oil, potatoes, rice",
+            "rownumber": 48
+          },
+          {
+            "region": "puerto rican",
+            "ingredients": "achiote, ginger, lime, plantains",
+            "rownumber": 49
+          },
+          {
+            "region": "romanian",
+            "ingredients": "garlic, root vegetables, tomatoes",
+            "rownumber": 50
+          },
+          {
+            "region": "russian",
+            "ingredients": "beets, cabbage, caraway seeds, dill, mushrooms, parsley, potatoes, sour cream",
+            "rownumber": 51
+          },
+          {
+            "region": "scandinavian",
+            "ingredients": "butter, chives, cream, dill, horseradish, mushrooms, pepper, potatoes, vinegar",
+            "rownumber": 52
+          },
+          {
+            "region": "scottish",
+            "ingredients": "oats, potatoes",
+            "rownumber": 53
+          },
+          {
+            "region": "singaporean",
+            "ingredients": "chiles, cinnamon, coconut, onions, scallions, turmeric",
+            "rownumber": 54
+          },
+          {
+            "region": "south american",
+            "ingredients": "allspice, beans, chiles, chorizo, coriander, corn, fruits (especially tropical), garlic, rice",
+            "rownumber": 55
+          },
+          {
+            "region": "south seas",
+            "ingredients": "coconut, ginger, red curry",
+            "rownumber": 56
+          },
+          {
+            "region": "southeast asian",
+            "ingredients": "chiles, curry leaves, garlic, ginger, lemongrass, nutmeg, scallions, turmeric",
+            "rownumber": 57
+          },
+          {
+            "region": "southwestern united states",
+            "ingredients": "chiles, anise, cajeta, cinnamon, clove, cumin, fruits (especially tropical), juniper berries, nuts, rice, sage",
+            "rownumber": 58
+          },
+          {
+            "region": "spanish",
+            "ingredients": "almonds, anchovies, beans, capers, chiles, chocolate, cinnamon, coriander, cumin, garlic, nuts, olive oil, olives, onions, oranges, paprika, parsley, peppers, pork, rice, saffron, seafood, sweet peppers, tomatoes, turmeric, vanilla",
+            "rownumber": 59
+          },
+          {
+            "region": "sri lankan",
+            "ingredients": "cardamom, cinnamon",
+            "rownumber": 60
+          },
+          {
+            "region": "swedish",
+            "ingredients": "dill, gravlax, juniper berries, reindeer",
+            "rownumber": 61
+          },
+          {
+            "region": "swiss",
+            "ingredients": "bacon, cheese, chocolate, meats, sausages",
+            "rownumber": 62
+          },
+          {
+            "region": "szechwan",
+            "ingredients": "chiles, fish sauce, garlic, ginger, leeks, peanuts, szechwan pepper",
+            "rownumber": 63
+          },
+          {
+            "region": "thai",
+            "ingredients": "basil, cardamom, chiles, cilantro, coconut, coriander, cumin, curry, fish sauce, garlic, lemongrass, lime, mint, peanuts, pepper, sugar, tamarind, turmeric",
+            "rownumber": 64
+          },
+          {
+            "region": "tunisian",
+            "ingredients": "cinnamon, couscous, cumin, garlic, honey, lemon, mint, pistachios",
+            "rownumber": 65
+          },
+          {
+            "region": "turkish",
+            "ingredients": "allspice, bulgur, garlic, lamb, lemon, olive oil, onions, oregano, parsley, rice, thyme, walnuts, yogurt",
+            "rownumber": 66
+          },
+          {
+            "region": "ukrainian",
+            "ingredients": "dill, sour cream",
+            "rownumber": 67
+          },
+          {
+            "region": "venezuelan",
+            "ingredients": "bananas, beans (especially red), beef, corn, rice",
+            "rownumber": 68
+          },
+          {
+            "region": "vietnamese",
+            "ingredients": "basil, chiles, cilantro, fish sauce, garlic, ginger, lemon, lemongrass, lime, mint, shallots, star anise",
+            "rownumber": 69
+          }
+        ],
+        "ingredients": [
+          {
+            "ingredient": "almonds",
+            "season": "all",
+            "complements": "apples, apricots, caramel, chocolate, coconut, cream, plums, prunes, raisins, rice, strawberries",
+            "techniques": "",
+            "rownumber": 1
+          },
+          {
+            "ingredient": "anchovies",
+            "season": "all",
+            "complements": "eggs, hard-boiled, garlic, lemon, olives, onions, parsley",
+            "techniques": "",
+            "rownumber": 2
+          },
+          {
+            "ingredient": "apples",
+            "season": "fall",
+            "complements": "almonds, applejack, bacon, blackberries, blue cheese, brandy, brown sugar, butter, butterscotch, calvados, caramel, cassia, celery, cheese, chestnuts, cider, cinnamon, cloves, cognac, cointreau, coriander, cranberries, cream, currants (black), custard, dates, ginger, grand marnier, hazelnuts, honey, horseradish, kirsch, lemon madeira, maple syrup, molasses, nutmeg, nuts (especially almonds or pecans), oatmeal, oranges, pears, pepper (black), pignoli, pistachios, praline, prunes, quinces, raisins, rosemary, rum, sauerkraut, sausages, sherry, sour cream, sugar, vanilla, vermouth, vinegar, walnuts, wine (red), yogurt",
+            "techniques": "",
+            "rownumber": 3
+          },
+          {
+            "ingredient": "apricots",
+            "season": "summer",
+            "complements": "almonds, brandy, caramel, cherries, coconut, cognac, cointreau, cream, custard, ginger, grand marnier, hazelnuts, honey, kirsch, lamb, lemon, lime lingo berries, maple syrup, nectarines, oranges, peaches, pineapple, pistachios, plums, raspberries, rice, sauternes, sesame, sour cream, strawberries, tarragon, vanilla, yogurt, wine",
+            "techniques": "bake poach, raw, stew",
+            "rownumber": 4
+          },
+          {
+            "ingredient": "artichokes",
+            "season": "all",
+            "complements": "aioli, anchovies, bacon, basil, bay leaves, bread crumbs, butter, cheese (goat), chervil, cream, cumin, fennel, garlic, hazelnuts, hollandaise sauce, lemon, mayonnaise, mornay sauce, mousseline sauce, mushrooms, olive oil, onions, parmesan cheese, parsley, pepper (especially black and red), remoulade sauce, salt, sausage, thyme, tomatoes, truffles (white), vinaigrette, wine (white)",
+            "techniques": "bake, braise, marinate, roast, steam",
+            "rownumber": 5
+          },
+          {
+            "ingredient": "arugula",
+            "season": "summer",
+            "complements": "avocado, butter, carpaccio, cheese (blue), garlic, lemon, olive oil, parmesan cheese, pasta, pears, pecans, pignoli, potatoes, ravioli, walnuts",
+            "techniques": "",
+            "rownumber": 6
+          },
+          {
+            "ingredient": "asparagus",
+            "season": "spring",
+            "complements": "anchovies, bread crumbs, butter, cheese sauce, chervil, chives, crabmeat, cream, eggs, garlic, ginger, hollandaise sauce, horseradish, lemon, maltaise sauce, mayonnaise, morels, mornay sauce, mousseline sauce, mushrooms, mustard, new potatoes, nutmeg, offal, olive oil, onion, orange, panceta, parmesan cheese, parsley, pepper, rosemary, shallots, soy, veloute sauce, vinaigrette",
+            "techniques": "boil, grill, steam",
+            "rownumber": 7
+          },
+          {
+            "ingredient": "avocados",
+            "season": "all",
+            "complements": "basil, beef (spiced or salt), bread (whole wheat), chiles, chives, cilantro, crab, cucumber, garlic, grapefruit, leeks, lemon, lemongrass, lime, mangoes, mint, onions (especially red), oranges, parsley, pineapples, pistachios, salt, shrimp, smoked fish (especially salmon and trout), sugar, tomatillos, tomatoes, vinaigrette, vinegar (especially balsamic)",
+            "techniques": "",
+            "rownumber": 8
+          },
+          {
+            "ingredient": "bananas",
+            "season": "all",
+            "complements": "alcohol, almonds, apricots, armagnac, bacon, blueberries, brandy, brown sugar, butter, calvados, caramel, cardamom, chicken, chocolate, cinnamon, coconut, cognac, coriander, cream, cream cheese, custard, eggs, fruits (especially tropical, e.g., mango, papaya, pineapple), gin, ginger, honey, ice cream, kirsch, lemon, lime, malt, maple syrup, nuts, oranges, passion fruit, pecans, pineapples, pralines, raspberries, rum, sour cream strawberries, sugar (brown or white), vanilla, yogurt",
+            "techniques": "bake, broil, poach, raw",
+            "rownumber": 9
+          },
+          {
+            "ingredient": "barley",
+            "season": "all",
+            "complements": "almonds, cabbage, ham, mushrooms, onions, parsley, peas",
+            "techniques": "",
+            "rownumber": 10
+          },
+          {
+            "ingredient": "bass",
+            "season": "all",
+            "complements": "almonds, anchovies, artichokes, butter, capers, carrots, chives, citrus, coriander, fennel, garlic, ginger, leeks, lemon, mint, mushrooms, olive oil, oranges, peppers, potatoes, shallots, thyme, tomatoes, wine (red)",
+            "techniques": "bake, braise, fry, grill, roast",
+            "rownumber": 11
+          },
+          {
+            "ingredient": "bass, striped ",
+            "season": "all",
+            "complements": "basil, cream, dill, eggplant, mustard, olives",
+            "techniques": "roast",
+            "rownumber": 12
+          },
+          {
+            "ingredient": "bean sprouts",
+            "season": "all",
+            "complements": "ginger, sesame oil, soy sauce, vinegar (especially wine)",
+            "techniques": "",
+            "rownumber": 13
+          },
+          {
+            "ingredient": "beans, black",
+            "season": "winter",
+            "complements": "avocadoes, bacon, cheese (especially goat), chiles, especially serrano, chives, cilantro, coriander, cumin, crème fraiche, epazote, garlic, ham hocks, jalapenos, madeira, mint, onions, oranges, peppers rice, salt pork, sour cream, tequila, tomatoes",
+            "techniques": "",
+            "rownumber": 14
+          },
+          {
+            "ingredient": "beans, fava",
+            "season": "spring-summer",
+            "complements": "bacon, butter, cilantro, cream, garlic, ham, leeks, lemon, mushrooms, olive oil, pancetta, parsley, pecorino cheese, rosemary, sage, salt, savory, spinach, thyme, vinaigrette",
+            "techniques": "boil, puree, steam",
+            "rownumber": 15
+          },
+          {
+            "ingredient": "beans, green",
+            "season": "summer-fall",
+            "complements": "almonds, anchovies, bacon, basil, béchamel sauce, butter, chives, cream, dill, garlic, lemon, mint, mushrooms, mustard, nutmeg, nuts (especially hazelnuts), olive oil, onions, oregano, parmesan cheese, parsley, pimentos, rosemary, savory, sour cream, tomatoes, vinegar (especially white wine) walnuts, worcestershire sauce",
+            "techniques": "boil, puree, steam",
+            "rownumber": 16
+          },
+          {
+            "ingredient": "beans, lima",
+            "season": "fall",
+            "complements": "bacon, brown sugar, butter, cheese (especially cheddar and monterey jack), chiles, cilantro, garlic, onions, oregano, rice, salt pork, tomatoes",
+            "techniques": "refry, simmer",
+            "rownumber": 17
+          },
+          {
+            "ingredient": "beans, white",
+            "season": "winter",
+            "complements": "bacon, bay leaf, chervil, chives, cream, garlic, maple syrup, molasses, olive oil, onions, parsley, pork and salt pork, rosemary, rum, sage, shallots, wine (red)",
+            "techniques": "",
+            "rownumber": 18
+          },
+          {
+            "ingredient": "beef",
+            "season": "all",
+            "complements": "basil, beer, béarnaise sauce, bordelaise sauce, burgundy, carrots, chiles, chives, corn, hazelnuts, horseradish, madeira, marrow, mushrooms, mustard, onions, orange, parsley, pepper (black), peppers, potatoes, prunes, scallions, shallots, soy, vinegar (balsamic), wine (especially red)",
+            "techniques": "boil, braise, grill, marinate, pot-roast, roast, spit-roast, stew",
+            "rownumber": 19
+          },
+          {
+            "ingredient": "beef heart",
+            "season": "all",
+            "complements": "bacon, horseradish, marjoram, paprika, parsley, rosemary",
+            "techniques": "bake, braise, grill",
+            "rownumber": 20
+          },
+          {
+            "ingredient": "beef ribs",
+            "season": "winter",
+            "complements": "ginger, horseradish, mustard, potatoes, tomatoes",
+            "techniques": "",
+            "rownumber": 21
+          },
+          {
+            "ingredient": "beet greens",
+            "season": "all",
+            "complements": "anchovies, butter, horseradish, mustard sour cream",
+            "techniques": "sauté",
+            "rownumber": 22
+          },
+          {
+            "ingredient": "beets",
+            "season": "all",
+            "complements": "allspice, anchovies, apples, bacon, béchamel sauce, brown sugar, butter, cheese, chives, cloves, cream, crème fraiche, cucumber, curry, dill, eggs (hard-cooked), fennel, ginger, horseradish, lemon, mache, mustard, nutmeg, onions, oranges, paprika, parsley, potatoes, prosciutto, salt, salt pork, shallots, smoked fish (especially trout or whitefish), sour cream, tarragon, vinaigrette, vinegar (especially balsamic, sherry and white wine), walnuts, walnut oil, watercress",
+            "techniques": "bake, boil, steam",
+            "rownumber": 23
+          },
+          {
+            "ingredient": "berries",
+            "season": "spring-summer",
+            "complements": "brown sugar, cream, framboise, maple syrup, sour cream, yogurt",
+            "techniques": "",
+            "rownumber": 24
+          },
+          {
+            "ingredient": "blackberries ",
+            "season": "summer",
+            "complements": "apples, cinnamon, cream, custard, honey, lemon, maple syrup, peaches, raspberries, rose geranium, strawberries, sugar",
+            "techniques": "",
+            "rownumber": 25
+          },
+          {
+            "ingredient": "blueberries",
+            "season": "summer-summer",
+            "complements": "apples, apricots, blue cheese, bourbon, brown sugar, cinnamon, cognac, cointreau, cream currants, custard ginger, grand marnier, honey, lavender, lemon, lime, maple syrup, peaches, pineapple, raspberries, sour cream, strawberries, sugar, thyme, yogurt",
+            "techniques": "",
+            "rownumber": 26
+          },
+          {
+            "ingredient": "bluefish",
+            "season": "spring",
+            "complements": "bacon, basil, cabbage, garlic, lemon, lime, mustard, juniper berries, tomato, vinegar, wine",
+            "techniques": "bake, broil, grill, sauté smoke",
+            "rownumber": 27
+          },
+          {
+            "ingredient": "brains",
+            "season": "all",
+            "complements": "bacon, bread crumbs, butter (especially brown), capers crêpes, cheese (especially gruyere) cherries, cream, eggs, garlic, hollandaise sauce, lemon, mushrooms, mustard, onions, paprika, parsley, spinach, sweetbreads, tomato sauce, vinegar, water cress, wine, worcestershire sauce",
+            "techniques": "bake, broil, sauté",
+            "rownumber": 28
+          },
+          {
+            "ingredient": "broccoli",
+            "season": "fall-winter",
+            "complements": "anchovies, bacon, bread crumbs, butter, cheese (especially parmesan, romano or swiss), cream, cumin, garlic, hollandaise sauce, lemon, maltaise sauce, nuts (especially almonds and walnuts), olive oil, onions, orange, peppers (especially hot), pimiento, potatoes, vinaigrette, watercress",
+            "techniques": "deep-fry, sauté, steam",
+            "rownumber": 29
+          },
+          {
+            "ingredient": "broccoli rabe",
+            "season": "all",
+            "complements": "garlic, lemon, olive oil, red pepper flakes, romano cheese",
+            "techniques": "",
+            "rownumber": 30
+          },
+          {
+            "ingredient": "brussels sprouts",
+            "season": "fall-winter",
+            "complements": "almonds, anchovies, apples, bacon, bread crumbs, butter, carrots, cheese (e.g., parmesan, swiss, taleggio), chestnuts, cream, duck fat, eggs (hard-boiled), garlic, grapefruit, ham, hollandaise sauce, lemon, mushrooms, mustard, nutmeg, onions, pancetta, parsley, pepper (black), peppers (sweet), pignoli, rosemary, salt, thyme, veal gravy, vinegar, walnuts",
+            "techniques": "bake boil, braise, parboil, sauté, steam",
+            "rownumber": 31
+          },
+          {
+            "ingredient": "buckwheat (kasha)",
+            "season": "all",
+            "complements": "asparagus, eggs, mushrooms, parmesan cheese, pignoli, sour cream",
+            "techniques": "",
+            "rownumber": 32
+          },
+          {
+            "ingredient": "bulgar",
+            "season": "all",
+            "complements": "lemon, mint, olive oil, onions, parsley",
+            "techniques": "",
+            "rownumber": 33
+          },
+          {
+            "ingredient": "cabbage, cooked",
+            "season": "fall-winter",
+            "complements": "apples, bacon, béchamel sauce, beets, butter, caraway seeds, caviar, chestnuts, coconut, cream, garlic, ham, horseradish, leeks, lemon, juniper berries, madeira, mustard, nutmeg, onions, paprika, parsley, pepper, poppy seeds, potatoes, salt, salt pork, sausages, sorrel, spinach, vinegar",
+            "techniques": "bake, boil, braise, sauté, steam, stir-fry",
+            "rownumber": 34
+          },
+          {
+            "ingredient": "cabbage, raw",
+            "season": "fall-winter",
+            "complements": "apples, carrots, celery root, chervil, chives, lime, nut oil, olive oil, pepper (green), vinegar (especially sherry and white wine)",
+            "techniques": "",
+            "rownumber": 35
+          },
+          {
+            "ingredient": "cabbage, red",
+            "season": "fall-winter",
+            "complements": "apples, bacon, bay leaves, brown sugar, cheese (especially goat), chestnuts,  cinnamon, cloves, garlic, olive oil, onions, pepper, prosciutto, salt, thyme, vinegar (especially wine), walnuts, wine (especially red)",
+            "techniques": "blanch, braise",
+            "rownumber": 36
+          },
+          {
+            "ingredient": "calves brains",
+            "season": "all",
+            "complements": "butter (especially brown), capers, chervil, chives, hollandaise sauce lemon, onions, parsley, pepper, tarragon, thyme, tomato sauce, truffles (especially black), vinegar (especially white), watercress",
+            "techniques": "fry, sauté, simmer",
+            "rownumber": 37
+          },
+          {
+            "ingredient": "calves, head",
+            "season": "all",
+            "complements": "bay leaves, cloves, lemon, madeira, sherry, tomato sauce, vinaigrette, wine, white",
+            "techniques": "",
+            "rownumber": 38
+          },
+          {
+            "ingredient": "calves, liver",
+            "season": "all",
+            "complements": "apples, bacon, basil, béarnaise sauce, bread crumbs, chervil, chives, cognac, garlic, grapes, leeks, lemon, lime, madeira, marsala, mushrooms, mustard, onions, pancetta, parsley, pepper (black), peppers (green), port, potatoes, raisins, sage, shallots, sherry, sour cream, tarragon, tomato, vinegar (especially sherry), wine (white)",
+            "techniques": "braise, broil, grill, sauté, stew",
+            "rownumber": 39
+          },
+          {
+            "ingredient": "capon",
+            "season": "fall-winter",
+            "complements": "apples, garlic, mushrooms, oranges, rosemary, tarragon, thyme, truffles",
+            "techniques": "",
+            "rownumber": 40
+          },
+          {
+            "ingredient": "cardoons",
+            "season": "summer-winter",
+            "complements": "anchovies, butter, chervil, cream, hollandaise sauce, lemon, olive oil, parmesan cheese, parley, truffles (white), vinaigrette, vinegar",
+            "techniques": "fry, simmer, stew",
+            "rownumber": 41
+          },
+          {
+            "ingredient": "carrots",
+            "season": "spring",
+            "complements": "almonds, bacon, basil, beef, brandy, butter, cayenne, celery, cheese (especially cheddar, parmesan, provolone, romano), chervil, chives, cilantro, cinnamon, cloves, cream, cumin, dill, fennel, garlic, ginger, honey, lemon, madeira, maple syrup, marjoram, marsala, mayonnaise, mint, mushrooms, mustard, nutmeg, nuts (especially hazelnuts and walnuts), olive oil, olives, onions, oranges, paprika, parsley, peas, pignoli, potatoes, raisins, rosemary, sage, shallots, stock, sugar, tarragon, thyme, tomatoes, turnips, vinegar (red wine), walnuts",
+            "techniques": "bake, boil, fry puree raw sauté steam",
+            "rownumber": 42
+          },
+          {
+            "ingredient": "catfish",
+            "season": "all",
+            "complements": "bacon, capers, ginger, ketchup, mustard, olive oil, olives, pecans, peppers (especially sweet)",
+            "techniques": "bake broil, fry, sauté",
+            "rownumber": 43
+          },
+          {
+            "ingredient": "cauliflower",
+            "season": "fall",
+            "complements": "aioli, almonds, anchovies, bacon, béchamel sauce, bread crumbs, butter (especially brown), cheese (especially cheddar, gruyere or parmesan), chervil, chives, cracker crumbs, cream, crème fraiche, curry, garlic, ham, hollandaise sauce, lemon, mornay sauce, mousseline sauce, mushrooms, mussels, nutmeg, nuts, olive oil, parsley, pepper (especially hot), tomato sauce, walnuts",
+            "techniques": "bake boil, deep-fry, puree, raw, sauté, steam",
+            "rownumber": 44
+          },
+          {
+            "ingredient": "caviar",
+            "season": "winter",
+            "complements": "blini, bread (black), cream, lemon, parsley, potatoes, shallots, smoked salmon, sour cream, toast, vodka",
+            "techniques": "",
+            "rownumber": 45
+          },
+          {
+            "ingredient": "celery",
+            "season": "summer",
+            "complements": "almonds, béchamel sauce, blue cheese, bread crumbs, butter, celery seeds, cream, curry, dill, fennel, hollandaise sauce, lemon, nutmeg, parsley, walnuts",
+            "techniques": "boil, braise, raw, steam",
+            "rownumber": 46
+          },
+          {
+            "ingredient": "celery root",
+            "season": "fall-winter",
+            "complements": "bacon, bread crumbs, butter, caraway seeds, cheese (especially parmesan and swiss), cream, fennel, garlic, hollandaise sauce, lemon, mayonnaise, mustard, nutmeg, olive oil, onions, parsley, potatoes, squash (butternut), thyme, vinegar (especially white wine), walnuts",
+            "techniques": "boil, braise, deep-fry, fry, puree, raw, sauté, steam",
+            "rownumber": 47
+          },
+          {
+            "ingredient": "crêpes",
+            "season": "fall",
+            "complements": "bacon, bay leaves, béarnaise sauce, bread crumbs, butter, cheese (especially gruyere or parmesan), cream, eggs, fennel, fish, foie gras, garlic, lemon, lemon thyme, mustard, nutmeg, olive oil, olives, paprika, parmesan cheese, parsley, pasta, pepper potatoes, poultry fat, risotto, rosemary, saffron, shallots, sour cream, truffles (white), vermouth, vinegar (especially wine), walnuts, walnut oil, wine",
+            "techniques": "bake, broil, fry, grill, raw, sauté",
+            "rownumber": 48
+          },
+          {
+            "ingredient": "chanterelles",
+            "season": "summer-fall",
+            "complements": "béchamel sauce, butter, chervil, chicken, cream, crème fraiche, eggs, fish, game, garlic, herbs, leeks, lemon, offal, olive oil, parsley, pepper (black) rabbit, shallots, shellfish, streak, tarragon, veal, vinaigrette",
+            "techniques": "sauté stew",
+            "rownumber": 49
+          },
+          {
+            "ingredient": "chard",
+            "season": "summer-winter",
+            "complements": "lemon, peppers (especially hot), saffron",
+            "techniques": "braise, parboil, sauté, steam",
+            "rownumber": 50
+          },
+          {
+            "ingredient": "cherries",
+            "season": "summer",
+            "complements": "almonds, apricots, armagnac, brandy, caramel, chocolate, cognac, cream, currants (red), custards, goat cheese, grand marnier, ice cream, kirsch, lemon, mint, nectarines, nuts, peaches, pepper (black), plums, port, sour cream, verbena, vanilla, vinegar (balsamic), zabaione",
+            "techniques": "flambé, raw",
+            "rownumber": 51
+          },
+          {
+            "ingredient": "chestnuts",
+            "season": "fall-winter",
+            "complements": "apples, brandy, brown sugar, brussels sprouts, butter, cabbage, carrots, cayenne, celery, chartreuse, chocolate, cinnamon, cloves, cognac, cream, crème fraiche, fennel, ginger, lemon, marsala, mushrooms, onions, orange, parsley, prunes, raspberries, rum, stuffings, sugar, vinegar",
+            "techniques": "bake, boil, roast, steam, stew",
+            "rownumber": 52
+          },
+          {
+            "ingredient": "chick peas",
+            "season": "summer",
+            "complements": "carrots, cilantro, coriander, couscous, cumin, garlic, lemon, lemon (preserved), mint, olive oil, onions, parsley, peppers (especially red), rosemary, spinach, tahini, tomatoes, yogurt",
+            "techniques": "",
+            "rownumber": 53
+          },
+          {
+            "ingredient": "chicken",
+            "season": "all",
+            "complements": "achiote, almonds, apples, armagnac, asparagus, bacon, barbecue sauce, basil, beer, béarnaise sauce, blood, brandy, bread crumbs, cabbage, calvados, champagne, cheese (especially swiss), cherries, chervil, chestnuts, chives, cider, coconut, cognac, coriander, corn, cranberries, cream, curry, dill, endive, escarole, fennel, five-spice powder, foie gras, fontina cheese, garlic, ginger, go chi berries, grapes, herbs honey, horseradish, lemon, lime, madeira, mangoes, marjoram, mint, morels, mushrooms, mustard, mussels, nutmeg, olive oil, olives, onions, oranges, oregano, oysters, paprika, parmesan cheese, parsley, peas, pecans, pepper, pineapples, plums, prunes, riesling, rosemary, savory, sour cream, soy sauce, star anise, stuffings, sweetbreads, sweet potatoes, tarragon, teriyaki sauce, thyme, tomatoes, truffles, vinegar (especially white), yogurt",
+            "techniques": "bake, braise, broil, fry, grill, marinate, roast, sauté",
+            "rownumber": 54
+          },
+          {
+            "ingredient": "chicken livers",
+            "season": "all",
+            "complements": "bacon, brandy, cognac, cream, garlic, madeira, mushrooms, onions, parsley, pepper salt, sour cream",
+            "techniques": "sauté",
+            "rownumber": 55
+          },
+          {
+            "ingredient": "chicory",
+            "season": "winter",
+            "complements": "apples, bacon, cheese (especially gruyere), crème fraiche, figs, ham, nuts, pears, vinaigrette, vinegar, walnuts",
+            "techniques": "grill",
+            "rownumber": 56
+          },
+          {
+            "ingredient": "chocolate",
+            "season": "all",
+            "complements": "almonds, bananas, caramel, cherries, cinnamon, citrus peel, coffee, coconut, cream (or milk), ginger, lemon, liquors, malt maple mint, mocha, nuts (especially hazelnuts), orange, passion fruit, pecans, pistachios, raspberries, rum, tea (especially earl grey), vanilla, verbena, violets, walnuts",
+            "techniques": "",
+            "rownumber": 57
+          },
+          {
+            "ingredient": "chocolate, white",
+            "season": "all",
+            "complements": "bananas, berries, blackberries, boysenberries, cherries, coconuts, hazelnuts, loganberries, oranges, raspberries, rum, violets",
+            "techniques": "",
+            "rownumber": 58
+          },
+          {
+            "ingredient": "clams",
+            "season": "spring-summer",
+            "complements": "bacon, bread crumbs, butter, chiles (especially red), chives, cream, curry, garlic, ginger, horseradish, lemon, olive oil, onion, paprika, parsley, pernod, potatoes, sake, shallots, sour cream, tabasco sauce tarragon, tartar sauce, thyme, tomatoes, vinegar, wine (white), worcestershire sauce",
+            "techniques": "bake, broil, fry, raw, roast, steam",
+            "rownumber": 59
+          },
+          {
+            "ingredient": "coconuts",
+            "season": "fall",
+            "complements": "apricots, bananas, chocolate, custard, fruits (especially tropical., e.g., banana, lime, mango, passion fruit, pineapple), nuts (especially tropical, e.g. brazil, cashew, macadamia), pineapple",
+            "techniques": "",
+            "rownumber": 60
+          },
+          {
+            "ingredient": "cod",
+            "season": "all",
+            "complements": "aioli, bay leaves, beans (black, fermented), black olives, butter, capers caraway seeds, champagne, chervil, coriander leaves, eggplant, garlic, ginger, hollandaise sauce, horseradish, juniper berries, leeks, lemon, milk, mushrooms, mustard, olive oil, olives, onions, parsley, pepper, potatoes, rosemary, sake, shallots, soy sauce, thyme, tomatoes, truffles, vinaigrette, vinegar (especially sherry), wine (white)",
+            "techniques": "boil, braise, broil, fry, pan-fry, poach, roast, sauté, steam",
+            "rownumber": 61
+          },
+          {
+            "ingredient": "coffee",
+            "season": "all",
+            "complements": "cinnamon, cognac, cream, hazelnut, lemon, vanilla",
+            "techniques": "",
+            "rownumber": 62
+          },
+          {
+            "ingredient": "corn",
+            "season": "summer",
+            "complements": "bacon, basil, butter, cayenne, chanterelles, cheese (especially feta or parmesan), chiles, chives, cilantro, cream, garlic, lemon, lime, lovage, marjoram, onions, parsley, pepper (black), peppers (green), salt, scallions, sweet pepper worcestershire sauce",
+            "techniques": "boil, grill, roast, sauté, simmer",
+            "rownumber": 63
+          },
+          {
+            "ingredient": "corned beef",
+            "season": "spring",
+            "complements": "beets, cabbage, carrots, garlic, horseradish, mustard, nutmeg, onions, parsley, potatoes",
+            "techniques": "braise, simmer",
+            "rownumber": 64
+          },
+          {
+            "ingredient": "crabs",
+            "season": "all",
+            "complements": "almonds, avocado, bacon, butter, cabbage, celery, chiles, chives, coconut, cognac, coriander, corn, cream, crème fraiche, curry, fennel seeds, garlic, ginger, grapefruit, hollandaise sauce, leeks, lemon, lemongrass, lettuce (bibb), louis dressing, madeira, mangoes, mayonnaise, mornay sauce, mushrooms, mustard, nutmeg, onions, oranges, parsley, pepper (black), potatoes, remoulade, rice, scallions, sherry, sour cream, tarragon, thousand island dressing, tabasco sauce, tomatoes, truffles (black), vinaigrette, vinegar, wine (white), worcestershire sauce",
+            "techniques": "boil, poach",
+            "rownumber": 65
+          },
+          {
+            "ingredient": "crabs, soft-shell",
+            "season": "spring-summer",
+            "complements": "almonds, basil, beans (black), butter, capers, carrots, cayenne, chives, dill, garlic, ginger, honey, lemon, lemongrass, lime, mayonnaise, pancetta, parsley, pepper, pernod, pignoli, soy sauce, spinach, tartar sauce, tomatoes, vinaigrette, vinegar",
+            "techniques": "broil, deep-fry, grill, sauté",
+            "rownumber": 66
+          },
+          {
+            "ingredient": "cranberries",
+            "season": "fall",
+            "complements": "apples, cinnamon, cloves, oranges, pears, sugar, walnuts",
+            "techniques": "",
+            "rownumber": 67
+          },
+          {
+            "ingredient": "crayfish",
+            "season": "spring",
+            "complements": "avocadoes, basil, bay leaves, brandy, bread crumbs, butter, carrots, cayenne, cheese (especially gruyere and parmesan), cognac, coriander, cream or milk, dill, garlic, hollandaise sauce, leeks, lemon, mayonnaise, nutmeg, onions, parsley, saffron, shallots, sherry, sorrel, tarragon, thyme, tomatoes, truffles, vinegar, wine (white)",
+            "techniques": "boil, grill, sauté, stew",
+            "rownumber": 68
+          },
+          {
+            "ingredient": "cucumbers",
+            "season": "spring-summer",
+            "complements": "anchovies, basil, butter, celery seeds, chervil, chiles, chives, cilantro, cream, cream cheese, dill, fennel, feta cheese, garlic, ginger, horseradish, lemon, lime, mangoes, mayonnaise, mint, mushrooms, nutmeg, olive oil, onions (especially red), parsley, pepper, salt, sour cream, strawberries, tomato sauce, tomatoes, vinegar (especially white wine), yogurt",
+            "techniques": "raw, simmer",
+            "rownumber": 69
+          },
+          {
+            "ingredient": "currants",
+            "season": "summer",
+            "complements": "almonds, cherries, cream, pears, prunes, raspberries",
+            "techniques": "",
+            "rownumber": 70
+          },
+          {
+            "ingredient": "custards",
+            "season": "all",
+            "complements": "almonds, bananas, berries, caramel, cherry, chocolate, cinnamon, coconut, coffee, cognac cointreau, ginger, lemon, maple, marsala, oranges, passion fruit, pineapple, rice, rum, strawberries, vanilla",
+            "techniques": "",
+            "rownumber": 71
+          },
+          {
+            "ingredient": "dandelion greens",
+            "season": "spring",
+            "complements": "bacon, cheese, garlic, lemon, mustard, olive oil, onions, vinegar (especially red wine)",
+            "techniques": "",
+            "rownumber": 72
+          },
+          {
+            "ingredient": "dates",
+            "season": "fall",
+            "complements": "almonds, apricots, bacon, brandy, caramel, chocolate, cinnamon, cream, cream cheese, ginger, nuts, orange, pecans, rum, vanilla, walnuts",
+            "techniques": "",
+            "rownumber": 73
+          },
+          {
+            "ingredient": "duck",
+            "season": "fall",
+            "complements": "anchovies, apples, apricots, armagnac, artichokes, basil, blackberries, blood oranges, bourbon, brandy, cabbage, cabbage (red), calvados, cherries (fresh or dried tart), chiles, chocolate (bittersweet), cider, cloves, cognac, cointreau, coriander leaves, corn, cranberries, currants (black), curry, duck livers, figs, garlic, gin, ginger, grand marnier, hoisin sauce, honey, juniper berries, kumquats, lemon, lentils, mangoes, mint, molasses, mushrooms, mustard, nutmeg, olive oil, olives, onions, oranges (bitter), paprika, parsley, peaches, pears, peas, pepper (black, green and pink), peppers (hot and red), pineapple, pistachios, plums, plum sauce (chinese), pomegranate, port, prunes, quinces, rhubarb, rice, rosemary, sage, sauerkraut, scallions, shallots, sherry, soy sauce, spinach, star anise, stuffing, tarragon, thyme, tomatoes, turnips, vinegar, walnuts, wines (red, especially burgundy and pinot noir and white)",
+            "techniques": "braise, roast, spit-roast",
+            "rownumber": 74
+          },
+          {
+            "ingredient": "eels",
+            "season": "fall",
+            "complements": "aioli, anchovies, bacon, bay leaves, brandy, crayfish, cream, dill, eel blood, garlic, leeks, lemon, mushrooms, nutmeg, olive oil, onions, parsley, pepper, prunes, raisins, shallots, soy sauce, tomato sauce, vinegar (especially balsamic), wine",
+            "techniques": "broil, grill, poach, sauté stew",
+            "rownumber": 75
+          },
+          {
+            "ingredient": "eggplant",
+            "season": "summer",
+            "complements": "aioli, anchovies, bacon, basil, béchamel sauce, bread crumbs, capers, cheese (especially goat, gruyere, mozzarella, parmesan and ricotta), chervil, cream, cumin, garlic, ham, lamb, lemon, mint, mushrooms, olive oil, onions, oregano, paprika, parsley, peppers (especially green), pesto, pignoli, rice, rosemary, salt, shallots, shrimp, soy, tarragon, thyme, tomatoes, vinegar (especially balsamic), walnuts, yogurt, zucchini",
+            "techniques": "bake, braise, broil, fry, grill, roast, sauté, stew",
+            "rownumber": 76
+          },
+          {
+            "ingredient": "eggs",
+            "season": "all",
+            "complements": "anchovies, asparagus, bacon, bread, butter, capers, caviar, cheese, chicken livers, chives, crab, cream, croutons, fines herbs, ham, herbs, hollandaise sauce, morels, mushrooms, onions, parmesan cheese, parsley, pepper, peppers (green), potatoes, ratatouille, salt, scallions, shallots, shrimp, smoked salmon, sorrel, spinach, tomato, truffles, watercress",
+            "techniques": "",
+            "rownumber": 77
+          },
+          {
+            "ingredient": "endive",
+            "season": "winter",
+            "complements": "apples, bacon, beans (white), beets, blue cheese, bread crumbs, butter, cheese (especially gruyere or parmesan), cream, figs, ham, kumquats, lemon, mornay sauce, mushrooms, orange, pears, roquefort cheese, scallops, smoked fish (especially salmon or trout), sugar, tangerines, thyme vinaigrette, walnuts, watercress",
+            "techniques": "braise, raw, sauté stew",
+            "rownumber": 78
+          },
+          {
+            "ingredient": "escarole",
+            "season": "winter",
+            "complements": "apples, bacon, capers, cheese (especially fontina, mozzarella, and roquefort), chiles, currants, eggs, garlic, olive oil, olives, onions, vinegar, walnuts",
+            "techniques": "braise, raw, sauté",
+            "rownumber": 79
+          },
+          {
+            "ingredient": "fennel",
+            "season": "fall",
+            "complements": "butter, celery root, cheese (especially goat, gruyere and parmesan), chestnuts, coriander, cream, fruit, garlic, hearts of palm, lemon, mushroom, olive oil, olives, onions, oranges, pancetta parmesan cheese, peppers pernod, potatoes, sherry, thyme, tomatoes, truffles, vinaigrette",
+            "techniques": "braise, raw, sauté",
+            "rownumber": 80
+          },
+          {
+            "ingredient": "fiddlehead ferns",
+            "season": "spring",
+            "complements": "bacon, butter, hollandaise sauce, leeks, lemons, nutmeg, olive oil, onions, shallots, vinaigrette",
+            "techniques": "deep-fry, steam",
+            "rownumber": 81
+          },
+          {
+            "ingredient": "figs",
+            "season": "summer-fall",
+            "complements": "almonds, anise, brown sugar, caramel, cheese (especially blue and goat), chocolate cinnamon, cinnamon basil, citrus peel (candied), coconut cream, cointreau, cornmeal cream, cream cheese, crème anglaise, crème fraiche, curacao, ginger, honey, lavender, lemon, marsala, mint, molasses, nuts (except peanuts), orange, parma ham, peaches, pears, pepper (black), port wine, praline, prosciutto, quince, raspberries, rosemary, sherry, sour cream, strawberries, thyme, vanilla, walnuts, wine (red)",
+            "techniques": "poach, raw, roast",
+            "rownumber": 82
+          },
+          {
+            "ingredient": "fish",
+            "season": "all",
+            "complements": "almonds, anchovies, basil, butter, champagne, cider, cilantro, coriander seeds, cream, cucumber, curry, fennel, florentine sauce, gin, guava, horseradish, kiwi fruit, leeks, lemon, lime, mace, marjoram, mint, mornay sauce, mushrooms, mustard, nutmeg, oranges, oysters, rosemary, saffron, shellfish, tarragon, thyme, tomatoes, vermouth, vodka, wine (especially white)",
+            "techniques": "",
+            "rownumber": 83
+          },
+          {
+            "ingredient": "fish, smoked",
+            "season": "all",
+            "complements": "avocados, capers, cream cheese, cucumbers, eggs (hard-boiled), horseradish, lemon, onions",
+            "techniques": "",
+            "rownumber": 84
+          },
+          {
+            "ingredient": "flounder",
+            "season": "all",
+            "complements": "butter, cognac, lemon, mushrooms, mustard",
+            "techniques": "braise, broil, grill, poach, sauté",
+            "rownumber": 85
+          },
+          {
+            "ingredient": "foie gras",
+            "season": "fall",
+            "complements": "allspice, apples, artichoke hearts, blood oranges, brandy, cabbage, celery root, crêpes, cherries, cinnamon, cloves, cognac, currants, custard, daikon, garlic, grains, grapes, greens, lemon lobster, madeira, mushrooms, nutmeg, nuts, onions, peaches, pepper (black), pistachios, polenta, pomegranates, port wine, quinces, raisins, salt, shallots, star anise, tarragon, truffles, turnips, vinegar (especially sherry), walnuts, wine (especially sauternes)",
+            "techniques": "",
+            "rownumber": 86
+          },
+          {
+            "ingredient": "frogs' legs",
+            "season": "spring-summer",
+            "complements": "basil, brandy, bread crumbs, butter, champagne, chiles, chives, crayfish, cream, crème fraiche, curry, fennel, garlic, lemon, lime, mushrooms, onions, paprika, parsley, pepper, risotto, shallots, tarragon, tomatoes, truffles, vinegar, wine (white)",
+            "techniques": "braise, deep-fry, fry, sauté, simmer",
+            "rownumber": 87
+          },
+          {
+            "ingredient": "game",
+            "season": "all",
+            "complements": "cherries, chocolate (bittersweet), currants, grapes, madeira, mushrooms, squash, tomatoes",
+            "techniques": "",
+            "rownumber": 88
+          },
+          {
+            "ingredient": "goose",
+            "season": "all",
+            "complements": "apples, barley, cabbage, crêpes, chestnuts, garlic, ginger, hollandaise sauce, honey, horseradish, lemon, mustard, onions, oranges, pepper, plums, potatoes, prunes, rice, sauerkraut, soy sauce, stuffing, turnips, wild rice",
+            "techniques": "roast",
+            "rownumber": 89
+          },
+          {
+            "ingredient": "grapefruit",
+            "season": "winter",
+            "complements": "bananas, brussels sprouts, campari, cashews, champagne, cheese (soft), chicory, cabbage (napa), citrus fruits (other), cointreau, coriander, curacao, fish, gin, grand marnier, honey, melon, mint, offal, orange, pineapple, pomegranate, raspberries, rosemary, rum, shellfish, sherry, strawberries, sugar (especially brown), vodka",
+            "techniques": "",
+            "rownumber": 90
+          },
+          {
+            "ingredient": "grapes",
+            "season": "summer-fall",
+            "complements": "brandy, brown sugar, cheese (especially soft, white e.g. brie), lemon, melon, mint, raspberries, sour cream, strawberries, walnuts, wine",
+            "techniques": "",
+            "rownumber": 91
+          },
+          {
+            "ingredient": "greens",
+            "season": "all",
+            "complements": "bacon, butter, cream, garlic, ham, lemon, mint, mushrooms, mustard, onions, pancetta pepper (black), salt pork, sausage, soy, vinegar, walnuts",
+            "techniques": "",
+            "rownumber": 92
+          },
+          {
+            "ingredient": "grouper",
+            "season": "spring",
+            "complements": "garlic, honey, lemon, mustard, spinach, wine (white)",
+            "techniques": "braise, grill, poach, sauté, steam",
+            "rownumber": 93
+          },
+          {
+            "ingredient": "guavas",
+            "season": "spring",
+            "complements": "bananas, cinnamon, cloves, cream, cram cheese, fish, ginger, honey, lemon, lime, mangoes, nutmeg, papayas, pears, pineapple, sugar, vanilla, wine (white)",
+            "techniques": "bake, puree",
+            "rownumber": 94
+          },
+          {
+            "ingredient": "guinea hens",
+            "season": "all",
+            "complements": "apples, bacon, beans (white, brussels sprouts, cabbage, champagne, lemon, madeira, mushrooms, olives (black), onions, thyme, tomatoes, watercress, wine",
+            "techniques": "bake, braise, roast, sauté",
+            "rownumber": 95
+          },
+          {
+            "ingredient": "haddock",
+            "season": "all",
+            "complements": "bananas, butter, capers, celery seeds, crab, curry, dill, fennel, lemon, mornay sauce, mushrooms, mustard, nutmeg, parsley, saffron, shrimp, tomatoes, worcestershire sauce",
+            "techniques": "bake, boil, broil, fry, poach, sauté, smoke",
+            "rownumber": 96
+          },
+          {
+            "ingredient": "halibut",
+            "season": "spring-summer",
+            "complements": "anchovies, bacon, basil, butter, cabbage, chives, cucumbers fennel, garlic, horseradish, leeks, lemon, lime, mangoes, mushrooms, mustard seeds, onions, parsley, potatoes, rosemary, saffron, scallions, shallots, shrimp, tarragon, thyme, tomatoes, vinegar, wine (white), zucchini",
+            "techniques": "braise, grill, poach, roast, sauté, steam",
+            "rownumber": 97
+          },
+          {
+            "ingredient": "ham",
+            "season": "all",
+            "complements": "apples, bananas, barbecue sauce, basil, bay leaves, bourbon, bread crumbs, brown sugar, champagne, cheese (especially gruyere), cherries, cider, cloves, cola, cranberries, cream, dijonnaise sauce, figs, garlic, honey, horseradish, juniper berries, lemon, madeira, mushrooms, mustard, onions, oranges, oregano, paprika, parsley, peaches, pineapple, port, raisins, rosemary, sherry, sour cream, sweet potatoes, thyme, tomatoes, truffles, vermouth, wine (red or white)",
+            "techniques": "bake broil, fry, grill",
+            "rownumber": 98
+          },
+          {
+            "ingredient": "hamburger",
+            "season": "all",
+            "complements": "cheese (especially cheddar), chili sauce, garlic, ketchup, maggi seasoning, mushrooms, mustard, onions, shallots, tomato sauce, worcestershire sauce",
+            "techniques": "",
+            "rownumber": 99
+          },
+          {
+            "ingredient": "hare",
+            "season": "fall",
+            "complements": "bay leaves, blood, burgundy, chocolate, cream, cumin, currants (red), garlic, juniper berries, lavender mushrooms, mustard, onions, oranges, parsley, pignoli, port, thyme, tomatoes, vinegar (especially red wine), walnuts, wine (especially red)",
+            "techniques": "roast",
+            "rownumber": 100
+          },
+          {
+            "ingredient": "hearts of palm",
+            "season": "all",
+            "complements": "bacon, lime, shellfish, vinaigrette",
+            "techniques": "",
+            "rownumber": 101
+          },
+          {
+            "ingredient": "herring",
+            "season": "all",
+            "complements": "apples, bacon, chives, cream, hollandaise sauce, lemon, mustard, oatmeal, olive oil, onions, parsley, potatoes, shallots, sour cream, vinegar, wine (white)",
+            "techniques": "bake, grill",
+            "rownumber": 102
+          },
+          {
+            "ingredient": "honeydew",
+            "season": "summer-fall",
+            "complements": "(see also melon), ginger, lemon, lime",
+            "techniques": "",
+            "rownumber": 103
+          },
+          {
+            "ingredient": "ices",
+            "season": "summer",
+            "complements": "apricots, bananas, champagne, cherries, cider, coffee, cranberry, currants (black), grand marnier, grapefruit, grapes, kiwi fruit, lemons, limes, mangoes, melons, mint oranges, passion fruit, peaches, persimmons, pineapples, raspberries, strawberries, tangerines, wine",
+            "techniques": "",
+            "rownumber": 104
+          },
+          {
+            "ingredient": "ice cream",
+            "season": "summer",
+            "complements": "apples, apricots, bananas, buttermilk, camembert, caramel, cherries, chocolate, coffee, cream (clotted), ginger, honey, maple syrup, mangoes, nuts, oranges, passion fruit, peaches, persimmons, pistachios, praline, raspberries, rum, strawberries, vanilla, walnuts",
+            "techniques": "",
+            "rownumber": 105
+          },
+          {
+            "ingredient": "jerusalem artichokes",
+            "season": "winter-spring",
+            "complements": "béchamel sauce, butter, cream, garlic, ginger, hazelnut, hollandaise sauce, lemon, mornay sauce, parmesan cheese, parsley, scallions",
+            "techniques": "bake, boil, fry, puree, steam",
+            "rownumber": 106
+          },
+          {
+            "ingredient": "jicama",
+            "season": "winter-spring",
+            "complements": "cayenne, chilies, cilantro, citrus (especially lime), cucumbers, lime, mangoes, oranges, salt, vinaigrette",
+            "techniques": "pan-fry, raw",
+            "rownumber": 107
+          },
+          {
+            "ingredient": "john dory",
+            "season": "all",
+            "complements": "basil, bay leaves, butter, caviar, chives, cream, garlic, lemon, lemon thyme, mushrooms, parsley, peppers (red and yellow), sage, shallots, thyme, tomatoes, wine (especially white)",
+            "techniques": "poach, sauté, steam",
+            "rownumber": 108
+          },
+          {
+            "ingredient": "kale",
+            "season": "winter",
+            "complements": "bacon, cheese, cream, garlic, lemon, olive oil, onions, potatoes",
+            "techniques": "",
+            "rownumber": 109
+          },
+          {
+            "ingredient": "kidneys",
+            "season": "all",
+            "complements": "brandy, butter, cayenne, crêpes, cognac, cream, curry, gin, horseradish, juniper berries, lemon, madeira, marsala, morels, mushrooms, mustard, nutmeg, onions, pancetta, parsley, rice, salt, shallots, sherry, sour cream, vermouth, watercress, wine (red or white)",
+            "techniques": "broil, fry, sauté",
+            "rownumber": 110
+          },
+          {
+            "ingredient": "kiwi fruit",
+            "season": "winter",
+            "complements": "apples, bananas, cucumbers, honey, kirsch, lemon, lime, nuts (especially cashews, hazelnuts, and macadamias), oranges, passion fruit, proscuitto, strawberries, tamarillos",
+            "techniques": "poach, raw",
+            "rownumber": 111
+          },
+          {
+            "ingredient": "kohlrabi",
+            "season": "winter",
+            "complements": "béchamel sauce, butter, cream, hollandaise sauce, lemon, nutmeg, parsley",
+            "techniques": "bake, boil, steam",
+            "rownumber": 112
+          },
+          {
+            "ingredient": "kumquats",
+            "season": "fall-winter",
+            "complements": "apples (green), aquavit, crème anglaise, gin, pineapples, rum, vanilla, vodka",
+            "techniques": "",
+            "rownumber": 113
+          },
+          {
+            "ingredient": "lamb",
+            "season": "spring",
+            "complements": "almonds, anchovies, aniseed, apples, apricots, artichoke hearts, bacon, basil, bay leaves, beans (especially flageolets, green or white), blueberries, bread crumbs, capers cardamom, cayenne, cheese (especially feta and parmesan), cherries (dried sour), chestnut puree, chiles, chives, cilantro, cinnamon, cloves, couscous, crab, cream, cumin, currants, curry, daikon, dill, eggplant, endive, fennel, foie gras, garlic, ginger, grapefruit, gremolata, hazelnuts (toasted), honey, juniper berries, lemon, madeira, mint, morels, mushrooms, mustard, mustard seeds, olive oil, olives, onions, oranges, oregano, parsley, pecans, pepper (black), pignoli, pimientos, pineapple, plums, pomegranates, prunes, red peppers, rhubarb, rice, rosemary, rum, sage, soy, star anise, tamarind, tarragon, thyme, tomatoes, truffles (especially black), veal kidneys vinaigrette, vinegar (especially red wine), walnuts, wines (especially red), yogurt, zucchini",
+            "techniques": "bake, braise, broil, grill, roast",
+            "rownumber": 114
+          },
+          {
+            "ingredient": "lamb chops",
+            "season": "spring",
+            "complements": "aioli, anchovies, baby artichokes, basil, bay leaves, brandy, caraway, caul fat, celery root, crêpes, curry, garlic, ginger, mushrooms, mustard, onions, oregano, parsley, pepper, pignoli, pomegranates, shallots, tarragon, tomatoes, vinegar (balsamic), yogurt",
+            "techniques": "braise, broil, grill, sauté",
+            "rownumber": 115
+          },
+          {
+            "ingredient": "lamb shanks",
+            "season": "all",
+            "complements": "flageolets, garlic, lemon, wine (red)",
+            "techniques": "braise",
+            "rownumber": 116
+          },
+          {
+            "ingredient": "lamb's liver",
+            "season": "all",
+            "complements": "butter, cream, parsley, salt pork, shallots",
+            "techniques": "",
+            "rownumber": 117
+          },
+          {
+            "ingredient": "lamb's tongue",
+            "season": "all",
+            "complements": "artichokes, basil, curry, fennel, garlic, olives, tomatoes, vinaigrette",
+            "techniques": "",
+            "rownumber": 118
+          },
+          {
+            "ingredient": "leeks",
+            "season": "fall",
+            "complements": "bacon, béchamel sauce, beets, bread crumbs, butter, cheese (especially cheddar, goat, and gruyere), cream, fish, hollandaise sauce, lemon, mousseline sauce, mustard olive oil, parmesan cheese, parsley, peas, potatoes, thyme, tomatoes, vinaigrette, wine (red)",
+            "techniques": "boil, braise, puree, steam, stew",
+            "rownumber": 119
+          },
+          {
+            "ingredient": "lemon",
+            "season": "spring",
+            "complements": "almonds, cardamom, chocolate, currants (black) honey, lime, poppy seeds, raspberries, strawberries",
+            "techniques": "",
+            "rownumber": 120
+          },
+          {
+            "ingredient": "lentils",
+            "season": "winter",
+            "complements": "bacon, bay leaves, cheese (feta and goat), foie gras, garlic, ham, lemon, mint, olive oil, onions, parsley, peppers pork fat, prunes, radishes, sausages, scallions, sorrel, spinach, thyme, tomato sauce, tomatoes, vinegar (especially sherry or wine)",
+            "techniques": "puree, simmer",
+            "rownumber": 121
+          },
+          {
+            "ingredient": "lettuces",
+            "season": "spring",
+            "complements": "anchovies, avocados, cheese, egg yolks, garlic, lemon, mayonnaise, mustard, oil (especially hazelnut, olive, peanut and walnut), onions, pepper, salt, vinaigrette, vinegar (especially balsamic, cider and red wine)",
+            "techniques": "braise, raw",
+            "rownumber": 122
+          },
+          {
+            "ingredient": "lime",
+            "season": "summer",
+            "complements": "bananas, coconut, lemon, raspberries, rum",
+            "techniques": "",
+            "rownumber": 123
+          },
+          {
+            "ingredient": "litchi nuts",
+            "season": "summer",
+            "complements": "coconut, cream, kiwi fruit",
+            "techniques": "",
+            "rownumber": 124
+          },
+          {
+            "ingredient": "lobster",
+            "season": "all",
+            "complements": "anchovies, anisette, apples, asparagus, avocados, bacon, basil, bordelaise, bourbon, brandy, bread crumbs, butter, caviar, cayenne, cheese (especially vacherin), chervil, chiles, chives, cider, cilantro, coconut, cognac, coral, coriander, corn, couscous, cream, crème fraiche, curry, endive, fennel, foie gras, garlic, ginger, grapefruit, hollandaise sauce, horseradish, leeks, lemon, lemon basil, lemongrass, lime, madeira, mayonnaise, mornay sauce, mushrooms, mustard, olive oil, onions, oranges, oysters, paprika, parsley, pepper (black), pernod, porcini, port, portobello, quinoa, rice, saffron, seaweed, shallots, sherry, star anise, tarragon, thyme, tomalley, tomatoes, truffles (black), vanilla, vinaigrette, vinegar (especially white wine), wine (white)",
+            "techniques": "bake, boil, broil, grill, pan-fry, poach, roast, sauté, steam",
+            "rownumber": 125
+          },
+          {
+            "ingredient": "mache",
+            "season": "winter",
+            "complements": "anchovies, beets, oils (especially nut and olive), parmesan cheese",
+            "techniques": "",
+            "rownumber": 126
+          },
+          {
+            "ingredient": "mackerel",
+            "season": "all",
+            "complements": "anchovies, béarnaise sauce, béchamel sauce, bread crumbs, butter, carrots, caviar, chiles, chives, coriander, currants, garlic, ginger, gooseberries, horseradish, lemon, lime, mornay sauce, mustard, onions, paprika, parmesan cheese, parsley, rosemary, scallops, sorrel, sour cream, soy sauce, spinach, tomato sauce, tomatoes, vinegar (especially sherry or wine), wine (white)",
+            "techniques": "bake, boil, broil, grill, sauté",
+            "rownumber": 127
+          },
+          {
+            "ingredient": "mahi-mahi",
+            "season": "all",
+            "complements": "avocados, chiles, cilantro, coconut, cumin, fruits (especially tropical), garlic, ginger, grapefruit, lime, olive oil, papaya, parsley, pineapples, soy sauce, tomatoes",
+            "techniques": "bake, broil, grill, sauté, sear, steam",
+            "rownumber": 128
+          },
+          {
+            "ingredient": "mangoes",
+            "season": "summer",
+            "complements": "almonds, blackberries, cloves, coconut, fish, ginger, kirsch, lemon, lime papayas passion fruit, pineapples, raspberries, rum, sauternes, shellfish, star anise",
+            "techniques": "bake freezing, poach, sauté",
+            "rownumber": 129
+          },
+          {
+            "ingredient": "marrow",
+            "season": "all",
+            "complements": "artichoke hearts, cayenne, eggs, lemon",
+            "techniques": "",
+            "rownumber": 130
+          },
+          {
+            "ingredient": "mascarpone",
+            "season": "all",
+            "complements": "brandy liqueur, fruit (especially strawberries), mushrooms, polenta, sugar",
+            "techniques": "",
+            "rownumber": 131
+          },
+          {
+            "ingredient": "melon",
+            "season": "summer",
+            "complements": "basil, berries, champagne, chilies, cognac, cointreau, cucumber, curacao, ginger, grapefruit, grand marnier, honey, ice cream, ices, kirsch lemon, lime, madeira, mint, muscat, nuts, oranges, pear, pepper port wine, prosciutto, raspberries, salt, sherry, strawberries, vanilla, wine (especially sweet)",
+            "techniques": "freeze, raw",
+            "rownumber": 132
+          },
+          {
+            "ingredient": "monkfish",
+            "season": "winter",
+            "complements": "aioli, artichokes, asparagus, bacon, butter (especially brown), cabbage, capers, carrots, chervil, chives, cider, coriander, cream, curry, fennel, garlic, ginger, leeks, lemon, lemongrass, marsala, mushrooms, olive oil, olives, parsley, peas, peppers, rosemary, saffron, sage, shallots, sherry (dry), soy sauce, thyme, tomatoes, wine",
+            "techniques": "bake, braise, grill, roast, sauté, steam",
+            "rownumber": 133
+          },
+          {
+            "ingredient": "morels",
+            "season": "spring",
+            "complements": "asparagus, bread crumbs, butter, chervil, chicken, chives, cream, custard, eggs, garlic, lemon, onions, parmesan cheese, parsley, peas, pepper, potatoes, poultry, rosemary, salt, sauternes, scallops, shallots, sour cream, tarragon, tomatoes, truffles, watercress",
+            "techniques": "bake, cream, fry, stew",
+            "rownumber": 134
+          },
+          {
+            "ingredient": "mushrooms",
+            "season": "fall",
+            "complements": "almonds, anchovies, bacon, barley, basil, bordelaise sauce, bread crumbs, butter, caraway seeds, cayenne, cheese (especially gruyere and parmesan), chervil, chives, coriander, cream, crème fraiche, dill, eggplants, eggs, fish, garlic, grapes, gremolata, ham, lemon, madeira, marjoram, marrow, mascarpone, mint, mornay sauce, mustard, nutmeg, nuts, olive oil, onions, oranges, oregano, oyster sauce, pancetta, paprika, parsley, pasta, peas, pepper (black), pineapple, pistachios, potatoes, rosemary, sausages (especially smoked), sauternes, shallots, shellfish, sherry, sorrel, sour cream, spinach, stock, tarragon, thyme, tomatoes, vinegar (especially wine), walnut oil, walnuts, wine (red or white)",
+            "techniques": "bake broil, fry, grill, puree, raw, sauté, steam",
+            "rownumber": 135
+          },
+          {
+            "ingredient": "mussels",
+            "season": "fall-winter",
+            "complements": "aioli, anchovies, aniseed, bacon, basil, bay leaves, beans (white), bread crumbs, butter, cayenne, chervil, chives, cilantro, cognac, cream, curry, fennel, garlic, leeks, lemon, lime, mayonnaise, mushrooms olive oil, onions, orange, pancetta, parsley, pepper (black), pernod, pesto, rise, saffron, shallots, snails, spinach, thyme, tomatoes, vinaigrette, vinegar, wine (white)",
+            "techniques": "broil, grill, pan-fry, steam",
+            "rownumber": 136
+          },
+          {
+            "ingredient": "mutton",
+            "season": "all",
+            "complements": "calvados, capers, mushrooms, tarragon, thyme3",
+            "techniques": "",
+            "rownumber": 137
+          },
+          {
+            "ingredient": "nectarines",
+            "season": "summer",
+            "complements": "almonds, berries, blackberries, blueberries, caramel, champagne, cherries, cinnamon, figs, ginger, nuts, orange, peaches, pepper (black), raspberries, vanilla",
+            "techniques": "",
+            "rownumber": 138
+          },
+          {
+            "ingredient": "noodles, egg",
+            "season": "all",
+            "complements": "bread crumbs, poppy seeds, tomato sauce",
+            "techniques": "",
+            "rownumber": 139
+          },
+          {
+            "ingredient": "octopus",
+            "season": "all",
+            "complements": "basil, bay leaves, chervil, garlic, lemon, parsley, vinegar, wine (red)",
+            "techniques": "grill, stew",
+            "rownumber": 140
+          },
+          {
+            "ingredient": "okra",
+            "season": "summer",
+            "complements": "basil, butter, garlic, hollandaise sauce, lemon, onions, parsley, pepper (black), peppers (especially green), tomatoes, vinaigrette",
+            "techniques": "sauté, stew",
+            "rownumber": 141
+          },
+          {
+            "ingredient": "onions",
+            "season": "fall",
+            "complements": "apples, bacon, butter, cheese sauce (especially cheddar or gruyere), cinnamon, cloves, cream, mushrooms, nutmeg, paprika, parmesan cheese, parsley, pepper (black), raisins, salt, sherry, sorrel, thyme, tomato sauce, vinegar, worcestershire sauce",
+            "techniques": "bake, boil, braise, fry, grill, raw, roast, sauté, steam",
+            "rownumber": 142
+          },
+          {
+            "ingredient": "oranges",
+            "season": "winter",
+            "complements": "armagnac, basil, brandy, cardamom, chipotle pepper chocolate, cinnamon, coconut, cointreau, ginger, grand marnier, kirsch, mangoes, olives, pecans, sherry, strawberries, vanilla",
+            "techniques": "",
+            "rownumber": 143
+          },
+          {
+            "ingredient": "oranges, blood",
+            "season": "winter",
+            "complements": "citrus fruit (especially grapefruits and tangerines), pomegranates",
+            "techniques": "",
+            "rownumber": 144
+          },
+          {
+            "ingredient": "oxtails",
+            "season": "all",
+            "complements": "garlic, grapes, gremolata, madeira, mustard, onions, pepper (black), prunes, shallots, tomatoes, wine ( especially burgundy)",
+            "techniques": "braise, stew",
+            "rownumber": 145
+          },
+          {
+            "ingredient": "oysters",
+            "season": "fall-spring",
+            "complements": "ale (beer or stout), allspice, anchovies, artichokes, bacon, bay leaves, beurre blanc, bread (brown), bread crumbs, caviar, cayenne, champagne, chiles, chives, cilantro, cream, cucumbers, curry, eggs, fennel, foie gras, garlic, ginger, horseradish, ketchup, leeks, lemon, lime, mace, marjoram, mignonette sauce, mint, mustard, nutmeg, onions, pancetta, paprika, parmesan cheese, parsley, pepper (black), pernod, potatoes, saffron, salsify, salt, sauerkraut, scallions, sea urchin roe, shallots, sherry shrimp, snails, spinach, tabasco sauce, thyme, vinegar (especially champagne), wine (white), worcestershire sauce",
+            "techniques": "bake, broil, deep-fry, grill, poach, raw, roast, sauté, stew",
+            "rownumber": 146
+          },
+          {
+            "ingredient": "papayas",
+            "season": "spring; fall",
+            "complements": "avocados, cayenne, chicken, chiles, coconut cream, coriander, cumin, ginger, grapefruit, lemon, lime, mangoes, oranges, parma ham, passion fruit, peaches, pineapple, port, strawberries, sugar, vanilla",
+            "techniques": "raw",
+            "rownumber": 147
+          },
+          {
+            "ingredient": "parsnips",
+            "season": "winter",
+            "complements": "almonds, butter, chives, cinnamon, curry, garlic, hazelnuts, lemon, madeira, nutmeg, parsley, pepper (black), potatoes, sorrel, tarragon, walnuts",
+            "techniques": "boil, deep-fry, grill, puree",
+            "rownumber": 148
+          },
+          {
+            "ingredient": "partridges",
+            "season": "fall",
+            "complements": "almonds, apples, bacon, cabbage, crêpes, chocolate, cream, curry, foie gras, garlic, juniper berries, lemon, lentils, mushrooms, onions, oysters, parsley, peppercorns (green), sage, sauerkraut, shallots, tarragon, truffles, wine",
+            "techniques": "braise, poach, roast, sauté",
+            "rownumber": 149
+          },
+          {
+            "ingredient": "passion fruit",
+            "season": "winter",
+            "complements": "champagne, chocolate, coconut, kiwi fruit, orange, papaya",
+            "techniques": "",
+            "rownumber": 150
+          },
+          {
+            "ingredient": "pasta",
+            "season": "all",
+            "complements": "basil, beans (especially cannellini), butter, cheese (especially parmesan), chiles, cream, garlic, herbs, lobster, mascarpone, mushrooms, olive oil, pancetta, pepper (black), pesto, pignoli, potatoes, ricotta, romano cheese, tomatoes, truffles (especially white)",
+            "techniques": "",
+            "rownumber": 151
+          },
+          {
+            "ingredient": "pea pods",
+            "season": "spring",
+            "complements": "almonds, butter, chicken, mushrooms, peanuts, sage",
+            "techniques": "steam, stir-fry",
+            "rownumber": 152
+          },
+          {
+            "ingredient": "peaches",
+            "season": "summer",
+            "complements": "almonds, apricots, basil, berries, blackberries, blueberries, bourbon, brandy, brown sugar, calvados, caramel, cassis, champagne, cherries, cinnamon, cinnamon basil, cloves, coconut, cognac cointreau, cream, currants (red), framboise, ginger, grand marnier, hazelnuts, honey, kirsch, lemon, lime, madeira, maple syrup, marsala, melba sauce, oranges, pecans, plums, port, praline, raspberries, rum, sherry, sour cream, strawberries, sugar, vanilla, wine (especially burgundy)",
+            "techniques": "poach, raw",
+            "rownumber": 153
+          },
+          {
+            "ingredient": "pears",
+            "season": "fall",
+            "complements": "almonds, anise, armagnac, beaujolais, blackberries, bourbon, brandy (especially pear brandy), brown sugar, calvados, caramel, cassis, chablis, cheese (especially brie, chantal, feta, gorgonzola, and roquefort), chocolate, cinnamon, cinnamon basil, cloves, cognac, cream, crème anglaise, crème fraiche, curacao, currants (black), figs, ginger, grand marnier, grappa, hazelnuts, honey, ice cream (especially caramel, pistachio and vanilla), kirsch, lemon, lingo berries, mace, maple marsala, melba sauce, muscat, nutmeg, nuts, oranges, pecans, pepper (black), pineapple, prunes, quinces, raisins, raspberries, riesling (late harvest), spinach, star anise, vanilla, vinegar (balsamic), walnuts, wine (especially burgundy), zabaione",
+            "techniques": "poach, raw",
+            "rownumber": 154
+          },
+          {
+            "ingredient": "peas",
+            "season": "spring",
+            "complements": "almonds, artichokes, bacon, butter, carrots, chervil, chives, cream, fennel, garlic, ham, leeks, lemon, lettuce, mint, mushrooms, nutmeg, onions (especially tiny), parsley, prosciutto, rice, risotto, rosemary, sage, salt pork, savory, shallots, sugar, vinegar",
+            "techniques": "boil, puree, steam",
+            "rownumber": 155
+          },
+          {
+            "ingredient": "pecans",
+            "season": "all",
+            "complements": "bourbon, brown sugar, butterscotch, caramel, chocolate, corn syrup, molasses, oranges, rum",
+            "techniques": "",
+            "rownumber": 156
+          },
+          {
+            "ingredient": "peppers, bell",
+            "season": "summer-fall",
+            "complements": "anchovies, basil, chiles, coriander, corn, garlic, lemon, meat (especially chicken, lamb and veal), olive oil, onions, rice, tomatoes, vinegar",
+            "techniques": "bake, broil, grill, par-boil, roast, stew",
+            "rownumber": 157
+          },
+          {
+            "ingredient": "persimmons",
+            "season": "fall",
+            "complements": "brandy (especially pear), brown sugar, caramel, cinnamon, cloves, cream, custard, ginger, grapefruit, honey, ices, kirsch, nutmeg, pecans, pork, sweet potatoes, vanilla, yams",
+            "techniques": "freeze, puree, raw",
+            "rownumber": 158
+          },
+          {
+            "ingredient": "pheasants",
+            "season": "fall",
+            "complements": "apples, bacon, blackberries, brandy, cabbage, calvados, chestnuts, chicory, chiles, cider, cream, crème fraiche, endive, foie gras, garlic, horseradish, juniper berries, lemon, madeira, marsala, mushrooms, olives, onions, orange, oysters, pecans, pepper, pheasant liver, pomegranate, port, rice, sage, sauerkraut, sausage, shallots, sour cream, stuffing, tangerines, thyme, truffles, vinegar, walnuts, whiskey, wine",
+            "techniques": "braise, broil, roast",
+            "rownumber": 159
+          },
+          {
+            "ingredient": "pigs' ear",
+            "season": "all",
+            "complements": "butter, cloves, lentils, mustard, onions, parsley",
+            "techniques": "simmer",
+            "rownumber": 160
+          },
+          {
+            "ingredient": "pigs' feet",
+            "season": "all",
+            "complements": "béarnaise sauce, bread crumbs, cabbage, capers, garlic, hollandaise sauce, mayonnaise, mustard, onions, pepper, sauerkraut, tartar sauce, thyme, tomato sauce, vinaigrette, vinegar (especially wine), wine (white)",
+            "techniques": "braise, broil, stew",
+            "rownumber": 161
+          },
+          {
+            "ingredient": "pike",
+            "season": "fall-winter",
+            "complements": "bacon, crayfish, cream, hollandaise sauce, sorrel, tomatoes, vinegar",
+            "techniques": "",
+            "rownumber": 162
+          },
+          {
+            "ingredient": "pineapple",
+            "season": "winter",
+            "complements": "apricots, avocados, bacon, bananas brandy, coconut, cucumbers, grapefruits, hazelnuts, liqueur (especially cognac, cointreau, grand marnier, and kirsch), lime, mangoes, melon, mint, oranges, papayas, raspberries, rum, strawberries, sugar, vanilla",
+            "techniques": "",
+            "rownumber": 163
+          },
+          {
+            "ingredient": "plantains",
+            "season": "all",
+            "complements": "bacon, beans (black) butter, cinnamon, nuts (especially almonds and walnuts), pineapples, rum, sour cream",
+            "techniques": "deep-fry, sauté, simmer",
+            "rownumber": 164
+          },
+          {
+            "ingredient": "plums",
+            "season": "summer",
+            "complements": "almonds, apricots, bananas brandy, brown sugar, caramel, cherries, cinnamon, custard, fruits (especially citrus), ginger, grapefruits, honey, lemon, muscat, nectarines, nuts, oranges, peaches, rhubarb, sauternes, vanilla, walnuts, wine (red)",
+            "techniques": "poach, raw, stew",
+            "rownumber": 165
+          },
+          {
+            "ingredient": "polenta",
+            "season": "all",
+            "complements": "butter, cheese (especially cheddar, goat, gorgonzola, monterey, jack and parmesan), escarole, garlic, mascarpone, milk, mushrooms, pepper, tomato sauce",
+            "techniques": "",
+            "rownumber": 166
+          },
+          {
+            "ingredient": "pomegranates",
+            "season": "fall",
+            "complements": "bananas, blood oranges, chocolate, cream cheese, grapefruit, yogurt",
+            "techniques": "",
+            "rownumber": 167
+          },
+          {
+            "ingredient": "pompano",
+            "season": "winter",
+            "complements": "basil, bread crumbs, coconut, lemon, lime, mustard, shrimp",
+            "techniques": "bake (in paper), sauté",
+            "rownumber": 168
+          },
+          {
+            "ingredient": "porcinins",
+            "season": "summer",
+            "complements": "butter, garlic, marsala, muscatel wine, olive oil, parsley, sage, sherry, thyme, truffles (white)",
+            "techniques": "grill",
+            "rownumber": 169
+          },
+          {
+            "ingredient": "pork",
+            "season": "fall",
+            "complements": "apples, apricots, bay leaves, beans (black), beer, brandy, cabbage, calvados, cherries (dried sour), clams, cognac, coriander, cream, cumin, fennel, fruit, garlic, ginger, hoisin sauce, honey, juniper berries, lemon, lime, marsala, molasses, mustard, onions, orange, parsley, pepper (black), pineapple, plum sauce (chinese), plums, prunes, quinces, rosemary, sage, sauerkraut, soy sauce, star anise, tarragon, thyme, vinegar, walnuts, whiskey, wine (white)",
+            "techniques": "brine, grill, roast",
+            "rownumber": 170
+          },
+          {
+            "ingredient": "pork chops",
+            "season": "fall",
+            "complements": "apples, bay leaves, beer, bread crumbs, cabbage, cream, curry, fennel, garlic, ginger, juniper berries, leeks, mint, mustard, onions, oranges, parsley, pepper (black), rosemary, sauerkraut, sour cream, soy sauce, thyme, tomato sauce",
+            "techniques": "bake, braise, broil, grill, pan-fry, sauté",
+            "rownumber": 171
+          },
+          {
+            "ingredient": "potatoes",
+            "season": "fall-winter",
+            "complements": "anchovies, bacon, basil, butter, caviar, cayenne, celery root, crêpes, chard, cheese (especially cheddar, goat, gruyere and parmesan), chervil, chicory, chives, cream, crème fraiche, dill, duxelles, fennel, fenugreek, garlic, ham, horseradish, juniper berries, kale, leeks, lemon thyme, lovage, mint, mushrooms, mustard, nutmeg, olive oil, olives, onions, paprika, parsley, parsley root, pepper, pork, salt, savory, smoked salmon, sorrel, sour cream, squash (winter), sweet potatoes, thyme, truffles, turnips",
+            "techniques": "bake, boil, deep-fry, fry, puree, roast, steam, stew",
+            "rownumber": 172
+          },
+          {
+            "ingredient": "prosciutto",
+            "season": "all",
+            "complements": "beans (lima), bread, butter, figs, kiwi fruit, melons, papayas, peaches, pears",
+            "techniques": "",
+            "rownumber": 173
+          },
+          {
+            "ingredient": "prunes",
+            "season": "all",
+            "complements": "almonds, apricots, armagnac, brandy, chestnuts, cinnamon, cream, currants, kirsch, lemon, nuts (especially almonds, hazelnuts, pistachios, and walnuts), oranges, pears, port, rum, sherry, sugar, vinegar (balsamic), walnuts, wine (especially burgundy and sweet)",
+            "techniques": "stew",
+            "rownumber": 174
+          },
+          {
+            "ingredient": "pumpkin",
+            "season": "fall",
+            "complements": "apples, bacon, bourbon, brown sugar, butter, caramel, cinnamon, cloves, coconut cognac, cream, duck (including confit), garlic, ginger, gruyere cheese, honey, leeks, mace, maple syrup, mint, molasses, mushrooms, nutmeg, nuts, olive oil, onions, pecans, pepper (black), pumpkin seeds, rum, sage, sherry, sour cream, sugar, thyme, vanilla, vinegar (especially white wine), walnuts, yogurt",
+            "techniques": "bake",
+            "rownumber": 175
+          },
+          {
+            "ingredient": "quail",
+            "season": "fall",
+            "complements": "anchovies, apples, bacon, basil, bay leaves, beets, chiles (red) cider, cognac, cranberries, currants (especially black), curry, figs, foie gras, garlic, gin, ginger, grapes, honey, juniper berries, leeks, lemon, lime, maple syrup, molasses, mushrooms, mustard, onions, orange, pancetta, parsley, pears, pecans, pepper, persimmons, pignoli, pineapple, port wine, potatoes, prunes, quail eggs, quail liver, quinces, risotto, sage, salt, scallions, shallots, thyme, truffles (especially white), watercress, wine (white), worcestershire sauce",
+            "techniques": "broil, fry, grill, roast",
+            "rownumber": 176
+          },
+          {
+            "ingredient": "quinces",
+            "season": "fall",
+            "complements": "apples, brown sugar, butter, cognac, cream, foie gras, honey, lemon, nuts, pears, raspberries, sugar, vanilla",
+            "techniques": "bake, broil",
+            "rownumber": 177
+          },
+          {
+            "ingredient": "rabbit",
+            "season": "fall-winter",
+            "complements": "almonds, apricots, bacon, basil, bay leaves, beer, blood (especially rabbit and pork), brandy, bread crumbs, carrots, cherries, chervil, chives, chocolate (bitter), cider, cloves, coriander, cream, foie gras, garlic, grapes, horseradish, juniper berries, lemon, marsala, mole sauce, mushrooms, mustard, onions, oranges, parsley, pistachios, prunes, rosemary, saffron, sage, shallots, sour cream, spinach, tarragon, thyme, tomatoes, vinegar, walnuts, wine (especially red)",
+            "techniques": "braise, fry, grill, roast, sauté",
+            "rownumber": 178
+          },
+          {
+            "ingredient": "radicchio",
+            "season": "fall-winter",
+            "complements": "anchovies, bacon, butter, cheese (especially parmesan), garlic, lemon, olive oil, pancetta, vinegar (especially balsamic), watercress",
+            "techniques": "",
+            "rownumber": 179
+          },
+          {
+            "ingredient": "radishes",
+            "season": "spring; fall",
+            "complements": "chives, lemon, oranges, parsley, salt, vinegar (especially rice wine and sherry)",
+            "techniques": "",
+            "rownumber": 180
+          },
+          {
+            "ingredient": "raspberries",
+            "season": "summer",
+            "complements": "almonds, apricots, bananas, brandy (especially raspberry), brown sugar, buttermilk, caramel, cassis, champagne, chocolate, cognac, cream, cream cheeses, currants (especially red), fruits (especially citrus), grand marnier, kirsch, lemon, mangoes, melons, peaches, pears, pepper (black) pineapple, pistachios, sour cream, sugar vanilla, wine (red)",
+            "techniques": "",
+            "rownumber": 181
+          },
+          {
+            "ingredient": "red snapper",
+            "season": "all",
+            "complements": "anise, basil, bay leaves, bordelaise sauce, butter, capers, celery, cilantro, cloves, curry (especially red), dill, fennel, five-spice powder, garlic, ginger, honey, leeks, lemon, lime, mustard, olives (black), onions, oranges, parsley, pepper (black), peppers (especially green), potatoes, romesco sauce, parmesan cheese, rosemary, saffron, scallions, sesame, shallots, tarragon, thyme, tomatoes, vinegar (especially sherry), vinaigrette, wine (especially white)",
+            "techniques": "bake, braise, broil, grill, poach, roast, sauté, steam",
+            "rownumber": 182
+          },
+          {
+            "ingredient": "rhubarb",
+            "season": "spring",
+            "complements": "apples, berries (especially strawberries), brandy, brown sugar, butter, cinnamon, cream, fruit (especially citrus), ginger, oranges, pepper (black and pink), plums, sour cream, sugar",
+            "techniques": "bake, poach, stew",
+            "rownumber": 183
+          },
+          {
+            "ingredient": "rice, white",
+            "season": "all",
+            "complements": "almonds, basil, brown sugar, cardamom, cherries (dried), cinnamon, coconut, cream, curry, custard, garlic, ginger, lemon, mushrooms, nutmeg, nuts (especially almonds, walnuts, pecans, and pistachios), oranges, parsley, pignoli, pineapples, raisins, saffron, tomatoes, vanilla, yogurt",
+            "techniques": "",
+            "rownumber": 184
+          },
+          {
+            "ingredient": "rice, wild",
+            "season": "all",
+            "complements": "almonds, butter, hazelnuts, mushrooms, oranges, pepper pignoli",
+            "techniques": "",
+            "rownumber": 185
+          },
+          {
+            "ingredient": "ricotta cheese",
+            "season": "all",
+            "complements": "almonds, chocolate, cinnamon, cloves, cream cheese, garlic, graham crackers, lemon, nutmeg, nuts, pepper, pignoli, salt, spinach, sugar, vanilla",
+            "techniques": "",
+            "rownumber": 186
+          },
+          {
+            "ingredient": "risotto",
+            "season": "all",
+            "complements": "artichokes, asparagus, crab, mushrooms, parmesan cheese, peas, saffron, shallots, shellfish, truffles, veal, wine",
+            "techniques": "",
+            "rownumber": 187
+          },
+          {
+            "ingredient": "romaine",
+            "season": "all",
+            "complements": "anchovies, cheese (especially parmesan, blue, gorgonzola and roquefort), chives, garlic, lemon, olive oil, pepper (black)",
+            "techniques": "",
+            "rownumber": 188
+          },
+          {
+            "ingredient": "rutabegas",
+            "season": "winter",
+            "complements": "butter, cream, ginger, lemon, nutmeg, parsley, pepper (black), sage, sour cream, thyme",
+            "techniques": "bake, boil, deep-fry, puree, roast",
+            "rownumber": 189
+          },
+          {
+            "ingredient": "salmon",
+            "season": "spring-summer",
+            "complements": "aioli, anchovies, aquavit, artichokes, avocados, bacon, basil, beans (fermented black), béarnaise sauce, beurre blanc, bordelaise sauce, bread crumbs, capers, caviar, champagne, chervil, chives, citrus, clams, cognac, coriander, corn crab, cream, crème fraiche, cucumber, cumin, curry, dill, fennel, five-spice powder, garlic, ginger, hollandaise sauce, horseradish, juniper berries, leeks, lemon, lime, madeira, maple syrup, mayonnaise, mint, mousseline sauce, mushrooms, mustard, olives (black), parsley, pepper (black), peppers, pomegranates, raisins, salmon caviar, sesame, shallots, shrimp, snow peas, sorrel, spinach, tarragon, tomato, truffles, vermouth, vinaigrette, vinegar (especially white wine), walnuts, watercress, wine, worcestershire sauce, zucchini",
+            "techniques": "bake in parchment, braise, broil, grill, pan-fry, pan-roast, poach, sauté, sear, steam",
+            "rownumber": 190
+          },
+          {
+            "ingredient": "salmon, smoked",
+            "season": "all",
+            "complements": "artichokes, avocados, capers, caviar, celery rout cream, cucumber, dill, eggs, ginger (pickled), grapefruit, horseradish, leeks, lemon, melon, plums, pepper (black), potatoes, radishes",
+            "techniques": "",
+            "rownumber": 191
+          },
+          {
+            "ingredient": "salmon trout",
+            "season": "all",
+            "complements": "avocados, cream, dill, herb mayonnaise, lemon",
+            "techniques": "",
+            "rownumber": 192
+          },
+          {
+            "ingredient": "salsify",
+            "season": "winter",
+            "complements": "béchamel sauce, bread crumbs, butter, celery root, cheese (especially gruyere or parmesan), chives, cream, hollandaise sauce, lemon, mayonnaise, nutmeg, onions, parsley, salt, shellfish, tomatoes, vinegar, walnuts, worcestershire sauce",
+            "techniques": "boil, sauté",
+            "rownumber": 193
+          },
+          {
+            "ingredient": "salt cod",
+            "season": "all",
+            "complements": "bacon, caviar, cream, garlic, mayonnaise, mustard, olive oil, onions, parsnips, potatoes, tomato, truffles",
+            "techniques": "",
+            "rownumber": 194
+          },
+          {
+            "ingredient": "sardines",
+            "season": "spring-summer",
+            "complements": "anchovies, arugula, butter, garlic, lemon, mint, mustard, olive oil, olives, onions, paprika, parsley, pepper, pignoli, potatoes, raisins, salt, savory, spinach, thyme, tomatoes, vinegar (especially balsamic), wine (white)",
+            "techniques": "broil, grill, sauté",
+            "rownumber": 195
+          },
+          {
+            "ingredient": "sauerkraut",
+            "season": "all",
+            "complements": "apples, bacon, beer, brown sugar, caraway seeds, cream, dill, juniper berries, mushrooms, onions, pheasant, pineapples, pork, potatoes, sausages, shallots, tomatoes, wine (white)",
+            "techniques": "",
+            "rownumber": 196
+          },
+          {
+            "ingredient": "sausages",
+            "season": "all",
+            "complements": "apples, cabbage, cider, grapes, lentils, mustard, onions, sauerkraut, tomatoes, wine (white)",
+            "techniques": "boil, grill, pan-broil, roast, sauté",
+            "rownumber": 197
+          },
+          {
+            "ingredient": "scallops",
+            "season": "all",
+            "complements": "almonds, anise, asparagus, avocados, bacon, basil, bay leaves, brandy, bread crumbs, butter (especially brown), cabbage, cabbage (napa), capers, carrots, caviar, cayenne, celery, cheese (especially gruyere or parmesan), chervil, chives, cilantro, coriander, crab, cream, cucumbers, curry, dill, endive, fennel, foie gras, garlic, gin, ginger, hollandaise sauce, jerusalem artichokes, leeks, lemon, lemongrass, lemon thyme, lime, marjoram, mint. mornay sauce, mushrooms, mustard, olive oil, onions, oranges, paprika, parsley, pepper (black), peppers (red and hot), pernod, porcinis, potatoes, pumpkin, rosemary, saffron, salsa, salt, shallots sorrel, soy sauce spinach, tabasco sauce, tarragon, thyme, tomatoes, truffles, vanilla, vermouth, vinaigrette, vinegar (especially cider), wine (white)",
+            "techniques": "broil, deep-fry, grill, marinate, poach sauté, steam",
+            "rownumber": 198
+          },
+          {
+            "ingredient": "sea bass",
+            "season": "winter-spring",
+            "complements": "anchovies, basil, bay leaves, chervil, chives, coriander, cumin, curry, fennel, garlic, ginger, lemon, madeira, mushrooms, nutmeg, olive oil, olives, oranges, pepper, peppers, rosemary, seaweed, shallots, star anise, tarragon, thyme, tomatoes, truffles (black), vinegar (especially balsamic and white wine)",
+            "techniques": "bake, braise, grill, poach, roast, sauté",
+            "rownumber": 199
+          },
+          {
+            "ingredient": "seafood",
+            "season": "all",
+            "complements": "aioli, avocados, citrus, currants (red), grapefruit, lemon, lettuce, lime, olive oil, parsley, pepper (hot red), pignoli, smoked meats",
+            "techniques": "",
+            "rownumber": 200
+          },
+          {
+            "ingredient": "sea urchin",
+            "season": "winter",
+            "complements": "lemon, lime",
+            "techniques": "",
+            "rownumber": 201
+          },
+          {
+            "ingredient": "shad",
+            "season": "spring",
+            "complements": "butter, lemon, mustard, onions, parsley, sorrel, watercress",
+            "techniques": "bake, broil, roast",
+            "rownumber": 202
+          },
+          {
+            "ingredient": "shad roe",
+            "season": "spring",
+            "complements": "anchovies, bacon, basil, butter (especially brown), capers, chervil, chives, cream, lemon, lime, mornay sauce, mushrooms, mustard, onions, parmesan cheese, parsley, pepper (white), shallots, tarragon, watercress, wine (white)",
+            "techniques": "bake, broil, grill, par-boil, poach, sauté",
+            "rownumber": 203
+          },
+          {
+            "ingredient": "shellfish",
+            "season": "all",
+            "complements": "bacon, gin, ham, leeks, lemon, mushrooms, saffron, truffles, vermouth, vodka, wine",
+            "techniques": "",
+            "rownumber": 204
+          },
+          {
+            "ingredient": "shitakes",
+            "season": "all",
+            "complements": "butter, cabbage (napa), chicken, eggplant, fish, game, garlic, olive oil, parsley, shallots",
+            "techniques": "bake, sauté, steam, tempura-fry",
+            "rownumber": 205
+          },
+          {
+            "ingredient": "shrimp",
+            "season": "all",
+            "complements": "allspice, anchovies, artichokes, bacon, basil, bay leaves, beans (white), beer, brandy, butter, buttermilk, carrots, caviar, chervil, chiles, chives, cocktail sauce, coconut, cognac, corn, cream, cucumbers, curry (especially red), dill, eggplant, garlic, ginger, lemon, lemongrass, lime, madeira, mangoes, mayonnaise, mint, mushrooms, mustard, olive oil, onions (especially red), oranges, parsley peanuts, pepper (black), pernod, pineapple, pomegranates, rice, rosemary, saffron, sauternes, scallions, shallots, soy sauce, tabasco sauce, tarragon, thyme, tomatoes, vinaigrette, vodka, wine (especially rice or white), worcestershire sauce",
+            "techniques": "boil, broil, deep-fry, grill, pan-fry, poach, tempura-fry",
+            "rownumber": 206
+          },
+          {
+            "ingredient": "skate",
+            "season": "all",
+            "complements": "aioli, butter (including brown), capers, coriander, garlic, hazelnut, hollandaise sauce, mayonnaise, mint, olive oil, parsley, pepper, thyme, truffles, vinegar (especially red wine), wine (especially white)",
+            "techniques": "poach, roast, steam",
+            "rownumber": 207
+          },
+          {
+            "ingredient": "snails",
+            "season": "all",
+            "complements": "anchovies, anise, bacon, basil, bay leaves, bread crumbs, butter, chervil, cream fennel, garlic, lemon, mushrooms, nutmeg, parsley, pepper (black), pignoli, rosemary, salt, shallots, thyme, wine (white)",
+            "techniques": "bake, braise, broil, simmer",
+            "rownumber": 208
+          },
+          {
+            "ingredient": "snap peas",
+            "season": "all",
+            "complements": "butter, olive oil, vinegar (balsamic)",
+            "techniques": "",
+            "rownumber": 209
+          },
+          {
+            "ingredient": "snapper",
+            "season": "all",
+            "complements": "bread crumbs, endive, ginger, mustard",
+            "techniques": "roast, sauté",
+            "rownumber": 210
+          },
+          {
+            "ingredient": "sole",
+            "season": "all",
+            "complements": "almonds, anchovies, béarnaise sauce, béchamel sauce, butter, capers, carrots, cayenne, champagne, chives, coriander leaves, cream, garlic, hollandaise sauce, leeks, lemon, lobster, marsala, mint, morels, mushrooms, mussels, mustard, nutmeg, olive oil, onions, oranges, oysters, paprika, parmesan cheese, parsley, pepper (black), peppers, port wine, salt, scallions, shallots, shrimp, tabasco sauce, thyme, tomatoes, truffles, vinaigrette, vinegar, wine (especially white)",
+            "techniques": "braise, broil, fry, grill, poach, sauté, steam",
+            "rownumber": 211
+          },
+          {
+            "ingredient": "sole, dover",
+            "season": "all",
+            "complements": "basil, mustard, vermouth, wine (especially red)",
+            "techniques": "grill",
+            "rownumber": 212
+          },
+          {
+            "ingredient": "sorrel",
+            "season": "spring",
+            "complements": "butter, celery root, chard, chervil, cream, crème fraiche, eggs, fish, lentils, mustard, olive oil, pepper, black, potatoes, salt, spinach, sugar, tarragon",
+            "techniques": "blanche, puree sauté",
+            "rownumber": 213
+          },
+          {
+            "ingredient": "soufflés, sweet",
+            "season": "all",
+            "complements": "fruits (especially apples, apricots, blueberries, peaches, pears, pineapple, quinces, raspberries and strawberries), hazelnuts, liqueurs (especially anisette, cointreau, curacao, grand marnier, kirsch, madeira, marsala, port), vanilla",
+            "techniques": "",
+            "rownumber": 214
+          },
+          {
+            "ingredient": "spaetzle",
+            "season": "all",
+            "complements": "butter, pepper (black), poppy seeds",
+            "techniques": "",
+            "rownumber": 215
+          },
+          {
+            "ingredient": "spareribs",
+            "season": "all",
+            "complements": "barbecue sauce, garlic, ginger, honey, lemon, pepper, plum sauce, rosemary, sauerkraut, soy sauce, wine (rice), vinegar",
+            "techniques": "bake barbecue, boil, broil, par-boil",
+            "rownumber": 216
+          },
+          {
+            "ingredient": "spinach",
+            "season": "fall-spring",
+            "complements": "anchovies, brains, butter, cardamom, carrots, cheese (especially feta, goat, parmesan and ricotta), chiles, chives, cream, cumin, curry, eggs, fish, garlic, ginger, ham, hollandaise sauce, horseradish, leeks, lemon, lemongrass, mint, mushrooms, mustard, nutmeg, nuts (especially almonds and walnuts), olive oil, olives, onions, oranges, pepper (black), peppers (especially red), raisins, sorrel, sour cream, soy, sugar, tarragon, tomatoes, vinegar (especially red wine), yogurt",
+            "techniques": "boil, puree, sauté",
+            "rownumber": 217
+          },
+          {
+            "ingredient": "squab",
+            "season": "fall",
+            "complements": "apricots, bacon, basil, beer, brandy, butter, cabbage, cherries, chestnuts, chives, chocolate, cider, cognac, cranberries, cream, cumin, currants, eggplant, figs, foie gras, garlic, grapes, huckleberries, juniper berries, lemon, lime, mushrooms, olive oil, olives, onions, oranges paprika, parsley, peaches, peas, pepper (black), raspberries, rhubarb, rice, rosemary, sage, shallots, sour cream, soy, stuffing, tarragon, thyme, vinegar, truffles, wine (especially red)",
+            "techniques": "braise, broil, grill, roast",
+            "rownumber": 218
+          },
+          {
+            "ingredient": "squash, acorn",
+            "season": "fall-winter",
+            "complements": "bacon, brown sugar, butter, garlic, honey, maple syrup, nutmeg, parmesan cheese, pepper (black), sage",
+            "techniques": "bake, boil, steam",
+            "rownumber": 219
+          },
+          {
+            "ingredient": "squash, butternut",
+            "season": "fall-winter",
+            "complements": "ancho chiles, apples, butter, celery root, cheddar cheese, chestnuts, chorizo, cinnamon, curry, nuts, oranges, parmesan cheese, pears, pecans, rosemary, sage, sherry",
+            "techniques": "bake",
+            "rownumber": 220
+          },
+          {
+            "ingredient": "squash, spaghetti",
+            "season": "all",
+            "complements": "butter, cream, nutmeg, parmesan cheese, pepper, salt, tomato sauce",
+            "techniques": "bake, boil",
+            "rownumber": 221
+          },
+          {
+            "ingredient": "squash, summer",
+            "season": "summer",
+            "complements": "bacon, basil, butter, cinnamon, cream, curry, ginger, lemon, lemon thyme, nutmeg, olive oil, onions, paprika, parmesan cheese, pepper, saffron",
+            "techniques": "bake, deep-fry, sauté, steam",
+            "rownumber": 222
+          },
+          {
+            "ingredient": "squash, winter",
+            "season": "fall-winter",
+            "complements": "bacon, brown sugar, butter, cheese (gruyere and parmesan), chiles, cinnamon, cream, garlic, ginger, leeks, maple syrup, mint, nutmeg, nuts, olive oil, onions, oranges, parsley (especially italian), pineapples, potatoes, raisins, sage, sherry, thyme, truffles (white), vanilla",
+            "techniques": "bake, puree",
+            "rownumber": 223
+          },
+          {
+            "ingredient": "squash blossoms",
+            "season": "summer",
+            "complements": "butter, cheese (especially goat), forcemeats, garlic, olive oil",
+            "techniques": "bake, deep-fry, sauté",
+            "rownumber": 224
+          },
+          {
+            "ingredient": "squid",
+            "season": "winter",
+            "complements": "anchovies, basil, bay leaves, bread crumbs, cilantro, garlic, ginger, lemon, lime, mayonnaise, mint, olive oil, onions, parsley, rosemary, salsa, squid ink, tomatoes, vinaigrette, wine (especially white)",
+            "techniques": "bake, cook briefly, fry, braise slowly, grill, sauté",
+            "rownumber": 225
+          },
+          {
+            "ingredient": "steak",
+            "season": "all",
+            "complements": "avocados, basil, béarnaise sauce, bourbon, brandy, butter (with anchovies, chives, garlic parsley tarragon) cayenne, chives, cognac, coriander, garlic, ginger, horseradish, juniper berries, leeks, lemon, madeira, mushrooms, mustard, olive oil, onions, parsley, pepper (black), peppers (especially green), pizzaiola sauce, potatoes, rosemary, scallions, shallots, sherry, sour cream, soy, stilton cheese, tomatoes, truffles, vinegar (especially balsamic and red wine), wine (red or white), whiskey, worcestershire sauce",
+            "techniques": "broil, grill, pan-broil, pan-fry",
+            "rownumber": 226
+          },
+          {
+            "ingredient": "strawberries",
+            "season": "spring",
+            "complements": "almonds, apricots, bananas, basil, brown sugar, caramel, cassis, champagne, cinnamon, clotted cream, coconut, cognac, cointreau, cream, cream cheese, crème friache, curacao, currant (black), figs, grand marnier, grapefruits, guavas, kirsch, kiwi fruit, lemon, lime, maple syrup, mascarpone, nuts, oranges, passion fruit, peaches, pepper (black or pink), pineapple, port, raspberries, rhubarb, sambuca, sherry, sour cream, sugar, vanilla, vinegar (balsamic), violets, wine (especially red, e.g. beaujolais and claret), yogurt, zabaione",
+            "techniques": "",
+            "rownumber": 227
+          },
+          {
+            "ingredient": "stuffing",
+            "season": "all",
+            "complements": "apples, bacon, brazil nuts, bread crumbs, carrots, celery, chestnuts, cornbread crumbs, garlic, liquor (especially bourbon, cognac, whiskey), liver, mushrooms, nutmeg, onions, oysters, pancetta parsley, pecans, prunes, rice, rosemary, sage, sausages, savory, shallots, tarragon, thyme, walnuts",
+            "techniques": "",
+            "rownumber": 228
+          },
+          {
+            "ingredient": "sturgeon",
+            "season": "all",
+            "complements": "mayonnaise, oysters",
+            "techniques": "braise, grill, sauté",
+            "rownumber": 229
+          },
+          {
+            "ingredient": "suckling pig",
+            "season": "spring",
+            "complements": "garlic, myrtle, onions, rosemary",
+            "techniques": "roast",
+            "rownumber": 230
+          },
+          {
+            "ingredient": "sweet potatoes",
+            "season": "winter",
+            "complements": "apples, apricots, bacon, bananas, brown sugar, butter, cilantro, cinnamon, cloves, coconut, cream, garlic, ginger, honey, lemon, lime, maple syrup, nutmeg, oranges, paprika, pears, pecans, pepper (black), pineapple, raisins, rum, salt, sherry (dry), sour cream, sunflower seeds, thyme, vanilla, walnuts",
+            "techniques": "bake, boil, deep-fry, puree, roast, sauté",
+            "rownumber": 231
+          },
+          {
+            "ingredient": "sweetbreads",
+            "season": "all",
+            "complements": "apples bacon, brandy, bread crumbs, butter (especially brown), capers carrots, cherries, chervil, citrus, clove, corn (pureed), cream, crème friache, curry, eggs, garlic, hazelnuts, hollandaise sauce, lemon madeira, marsala, morels, mushrooms, mustard, onions (especially red), oysters, parmesan cheese, parsley, peas, pepper (red), port, savory shallots, sherry, spinach, tarragon, thyme, tomatoes, truffles, walnut oil, watercress, wine (white)",
+            "techniques": "braise, broil, poach, sauté",
+            "rownumber": 232
+          },
+          {
+            "ingredient": "swiss chard",
+            "season": "summer",
+            "complements": "chiles, garlic, lemon, tarragon, tomatoes, vinegar",
+            "techniques": "",
+            "rownumber": 233
+          },
+          {
+            "ingredient": "swordfish",
+            "season": "all",
+            "complements": "basil, beaujolais, bet juice, butter, capers, caviar, chanterelles, chives, coconut, coriander, cream, curry, ginger, grapefruit, lemon, mustard, olive oil, parsley, pineapples, rosemary, tarragon, tomatoes, vinaigrette, vinegar balsamic, wine (especially white)",
+            "techniques": "bake, broil, grill, roast, sauté",
+            "rownumber": 234
+          },
+          {
+            "ingredient": "tomatoes",
+            "season": "summer",
+            "complements": "anchovies, arugula, basil, bread crumbs, champagne, cheese (especially feta, goat, mozzarella and parmesan), chiles, chives, cucumbers, eggs, garlic, lemon, lovage, marjoram, mint, mushrooms, olive oil, olives, onions, oregano, parsley, pasta, pepper (black), peppers (especially red), saffron, salt, seafood, shallots, sugar, tarragon, thyme, vinegar (especially balsamic, sherry and wine)",
+            "techniques": "bake, broil, fry, grill, raw, sauté, stew",
+            "rownumber": 235
+          },
+          {
+            "ingredient": "tongue",
+            "season": "all",
+            "complements": "anchovies, capers, cherries, chervil, chives, garlic, horseradish, lemon, mushrooms, mustard, olive oil, parsley, pepper (black), port, rosemary, tarragon, thyme, tomatoes, vinegar (especially red wine)",
+            "techniques": "bake, boil",
+            "rownumber": 236
+          },
+          {
+            "ingredient": "tripe",
+            "season": "all",
+            "complements": "allspice, bacon, brandy, bread crumbs, calvados, chickpeas, cider, cloves, cumin, garlic, lemon, marjoram, mushrooms, mustard, nutmeg, onions, pancetta, paprika, parmesan cheese, parsley, pepper (black), prunes, saffron, sauternes, thyme, tomatoes, truffles, vinaigrette, vinegar (especially red wine), wine, worcestershire sauce",
+            "techniques": "braise, fry, poach, sauté, simmer",
+            "rownumber": 237
+          },
+          {
+            "ingredient": "trout",
+            "season": "all",
+            "complements": "almonds, anchovies, bacon, beans (especially flageolets), butter (especially brown), capers, crêpes, chervil, chiles, chives, cream, garlic, horseradish, lemon, mushrooms, parley, pears, pepper (black), pernod, port, scallions, sorrel, tabasco sauce, tomatoes, vinegar (especially wine), walnuts, wine (white)",
+            "techniques": "bake, broil, grill, poach, roast, sauté, sear, steam",
+            "rownumber": 238
+          },
+          {
+            "ingredient": "trout, smoked",
+            "season": "all",
+            "complements": "bacon, cream, horseradish, lemon, olive oil, sour cream",
+            "techniques": "",
+            "rownumber": 239
+          },
+          {
+            "ingredient": "truffles",
+            "season": "fall-winter",
+            "complements": "butter, champagne, chicken, cognac, cream, eggs, foie gras, garlic, ham, leeks, madeira, meats, morels, onions, parmesan cheese, pasta, pepper, port, potatoes, poultry, poultry fat, risotto, salt, sweetbreads",
+            "techniques": "",
+            "rownumber": 240
+          },
+          {
+            "ingredient": "truffles, black",
+            "season": "winter",
+            "complements": "chicken, eggs, fish, foie gras, pate, potatoes, poultry, turkey, veal, wine (white)",
+            "techniques": "",
+            "rownumber": 241
+          },
+          {
+            "ingredient": "truffles, white",
+            "season": "fall",
+            "complements": "butter, cheese (especially fontina or parmesan), eggs, pasta, risotto, salads",
+            "techniques": "",
+            "rownumber": 242
+          },
+          {
+            "ingredient": "tuna",
+            "season": "summer",
+            "complements": "aioli, anchovies, artichokes, avocados, bacon, bay leaves, beans (especially black and white), beets, capers, carrots, caviar, chives, cilantro, daikon, dill, garlic, ginger, leek, lemon, lemongrass, mayonnaise, mint, mushrooms, olive oil, onions, parsley, pepper (black), peppers (especially red bell), pineapple, potatoes, saffron, scallions, seaweed, sesame, soy sauce, tamarillos, teriyaki sauce, thyme, tomato sauce, tomatoes, vinaigrette, vinegar (especially wine), wasabi, wine (especially white)",
+            "techniques": "bake, braise, broil, grill, raw, roast, sauté, sear",
+            "rownumber": 243
+          },
+          {
+            "ingredient": "turbot",
+            "season": "all",
+            "complements": "anchovies, béarnaise sauce, butter, capers, cayenne, champagne, chives, cream, cucumbers, hollandaise sauce, horseradish, leeks, lemon, mousseline sauce, mushrooms, mustard, mace, nutmeg, olive oil, parsley, shallots, shrimp, tomatoes, wine (white)",
+            "techniques": "broil, poach, sauté",
+            "rownumber": 244
+          },
+          {
+            "ingredient": "turkey",
+            "season": "fall",
+            "complements": "celery, celery root, cheese (especially parmesan), chestnuts, chocolate (bitter), ham, lemon, madeira, maple syrup, marsala, mole sauce, mushrooms, parsley, prunes, raspberries, sage, stuffing, tarragon, thyme, truffles (white), vinegar, wine (white)",
+            "techniques": "broil, grill, roast",
+            "rownumber": 245
+          },
+          {
+            "ingredient": "turnips",
+            "season": "winter",
+            "complements": "apples, bacon, butter, carrots, cheese (gruyere and parmesan), chives, cider, cinnamon, cream, fat (animal; e.g., chicken lamb, pork), garlic, lemon, lemon thyme, maple syrup, mushrooms, mustard, onions, paprika, parsley, potatoes, salt, sherry, sugar, sweet potatoes, tarragon, thyme, vinaigrette, vinegar",
+            "techniques": "boil, fry, puree, sauté, simmer, steam",
+            "rownumber": 246
+          },
+          {
+            "ingredient": "veal",
+            "season": "spring",
+            "complements": "anchovies, apples, artichokes, arugula, bacon, basil, bay leaves, bread crumbs, butter, capers, carrots, crêpes, cheese (especially gruyere and parmesan), chervil, cider, cloves, corn (pureed), cream dill, endive, foie gras, garlic, ginger, grapefruit, ham, leeks, lemon, lime, madeira, marsala wine, morels, mornay sauce, mushrooms, mustard, olive oil, onions, paprika, parma ham, parsley, pepper (black), peppers, pistachios, potatoes, rosemary, sage, salmon, shallots, sorrel, sour cream, spinach, sweetbreads, tapenade, tarragon, thyme, tomatoes, truffles (especially white), tuna, verbena, vermouth, wine (especially white)",
+            "techniques": "braise, roast, sauté",
+            "rownumber": 247
+          },
+          {
+            "ingredient": "veal chops",
+            "season": "all",
+            "complements": "anchovies, bacon, basil, bay leaves, bread crumbs, capers, chervil, cognac, garlic, ginger, lemon, madeira, morels, mornay sauce, mushrooms, olives, onions, paprika, parmesan cheese, parsley, pepper (black), peppers, potatoes, rosemary, shallots, sorrel, tarragon, thyme, tomato sauce, vinegar (especially raspberry and wine), watercress, wine",
+            "techniques": "braise, broil, roast, sauté",
+            "rownumber": 248
+          },
+          {
+            "ingredient": "veal kidneys",
+            "season": "all",
+            "complements": "bacon, beans (especially white), brandy, butter, cognac, cranberries, cream, curry, garlic, gin, juniper berries, lemon, morels, mushrooms, mustard, nutmeg, onions, paprika, parsley, shallots, wine",
+            "techniques": "bake, broil, grill, sauté",
+            "rownumber": 249
+          },
+          {
+            "ingredient": "veal shanks",
+            "season": "winter",
+            "complements": "carrots, garlic, gremolata, honey, lemon, onions, parsley, pepper (black), rosemary, sage, thyme, wine (white)",
+            "techniques": "",
+            "rownumber": 250
+          },
+          {
+            "ingredient": "veal sweetbreads",
+            "season": "all",
+            "complements": "brandy, cognac, crayfish, mushrooms, onions, tomatoes",
+            "techniques": "braise, broil, sauté",
+            "rownumber": 251
+          },
+          {
+            "ingredient": "venison",
+            "season": "fall",
+            "complements": "apples, bacon, bananas, barley, bay leaf, béarnaise sauce, brandy, cherries (especially black), chestnuts, chiles (especially ancho and poblano), cider, coriander seeds, cream, currants (red), garlic, goat cheese, horseradish, huckleberries, juniper berries, madeira, marjoram, mushrooms, mustard, onions, oranges, parsnips, pears, pepper (black), pomegranates, port, prickly pears, prunes, rosemary, sweet potatoes, tarragon, thyme, vinegar (especially red wine), wine (especially red)",
+            "techniques": "braise, grill, roast, sauté",
+            "rownumber": 252
+          },
+          {
+            "ingredient": "walnuts",
+            "season": "fall",
+            "complements": "caramel, crêpes, cheese (especially roquefort and stilton), fish, mushrooms, pork, port, raisins, salads, sherry, zucchini",
+            "techniques": "",
+            "rownumber": 253
+          },
+          {
+            "ingredient": "watercress",
+            "season": "spring",
+            "complements": "beets, chicory, eggs, endive, mustard, oranges, oregano, parsley, thyme, vinaigrette, walnuts",
+            "techniques": "puree, raw",
+            "rownumber": 254
+          },
+          {
+            "ingredient": "yams",
+            "season": "winter",
+            "complements": "apricots, butter, persimmons, maple",
+            "techniques": "",
+            "rownumber": 255
+          },
+          {
+            "ingredient": "yogurt",
+            "season": "all",
+            "complements": "apples, bananas, blueberries, carrots, coconut, cucumbers, granola, honey, mint, nuts (especially hazelnuts), oats, onion, peaches, radishes, raspberries, strawberries, watercress",
+            "techniques": "",
+            "rownumber": 256
+          },
+          {
+            "ingredient": "zucchini",
+            "season": "spring-summer",
+            "complements": "anchovies, basil, bread crumbs, butter, cayenne, cheese (especially feta, gruyere, parmesan, ricotta), cilantro, cinnamon, cloves, cream, dill, eggplant, garlic, hazelnuts, lemon, marjoram, mint, mushrooms, olive oil, onions, oregano, parsley, pesto, pignoli, rosemary, sage, salmon, tarragon, thyme, tomatoes, vinegar, walnuts",
+            "techniques": "bake, fry, sauté",
+            "rownumber": 257
+          }
+        ]
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="app js-app">
+      <div class="topcoat-list__container">
+        <h2>Flavors</h2>
+        <input type="text"  value="" placeholder="filter..." class="topcoat-search-input--large">
+      </div>
+      <div class="topcoat-list__container">
+        <h3 class="topcoat-list__header column-header"></h3>
+        <ul class="topcoat-list results-list">
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+
+</html>
