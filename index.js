@@ -90,8 +90,10 @@ function setResults(objs, itemPrefix, titleName) {
 
 function filterResults(objs, str) {
   var matches = []
+  str = str.trim().toLowerCase()
   objs.map(function(obj) {
-    if (obj.title.trim().toLowerCase().match(str.trim().toLowerCase())) matches.push(obj)
+    if (obj.title.trim().toLowerCase().match(str)) matches.push(obj)
+    if (obj.description.toLowerCase().match(str)) matches.push(obj)
   })
   return matches
 }
