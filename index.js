@@ -22,6 +22,29 @@ function filterResults(objs, str) {
   return matches
 }
 
+function throttle(fn, threshhold, scope) {
+  threshhold || (threshhold = 250)
+  var last
+  var deferTimer
+  return function () {
+    var context = scope || this
+
+    var now = +new Date
+    var args = arguments
+    if (last && now < last + threshhold) {
+      // hold on to it
+      clearTimeout(deferTimer)
+      deferTimer = setTimeout(function () {
+        last = now
+        fn.apply(context, args)
+      }, threshhold)
+    } else {
+      last = now
+      fn.apply(context, args)
+    }
+  }
+}
+
 var ingredients = flavors.ingredients.map(function(ingredient) {
   return {
     title: ingredient.ingredient,
@@ -34,7 +57,7 @@ setResults(ingredients)
 
 var input = document.querySelector('input')
 
-input.addEventListener('keyup', function(e) {
+input.addEventListener('keyup', throttle(function(e) {
   if (input.value.length === 0) setResults(ingredients)
   else setResults(filterResults(ingredients, input.value))
-})
+}, 1000))
