@@ -7,8 +7,6 @@ var inputEl = document.querySelector('input')
 var openLeft = document.querySelector('#open-left')
 var snapDrawer = document.querySelector('.snap-drawer')
 
-var hash = (window.location.hash || '').replace('#', '')
-
 var snapper = new Snap({
   element: contentContainer,
   disable: 'right'
@@ -44,19 +42,21 @@ var lists = {
   }
 }
 
-var prefix = "eat with"
-var title = "ingredients"
-var activeList = lists.ingredients()
+var url = parseUrl()
 var input = inputEl
 
-input.value = hash
+var prefix = "eat with"
+var title = url.list||"ingredients"
+var activeList = lists.ingredients()
+if(lists[url.list]) activeList = lists[url.list]()
+
+input.value = url.search
 
 updateResults(input.value, activeList, prefix, title)
 
 input.addEventListener('keyup', throttle(function(e) {
   updateResults(input.value, activeList, prefix, title)
 }, 1000))
-
 
 addEvent(openLeft, 'click', function(){
   if (snapper.state().state === 'closed') snapper.open('left')
@@ -71,8 +71,8 @@ addEvent(searchOptions, 'click', function(e) {
   if (searchBy) {
     snapper.close('left')
     activeList = lists[searchBy]()
-    input.value = ''
-    updateResults('', activeList, prefix, title)
+    
+    updateResults(input.value, activeList, prefix, title)
   }
   return false
 })
@@ -116,7 +116,7 @@ function filterResults(objs, str) {
 }
 
 function updateResults(value, activeList, prefix, title){
-  location.hash = value
+  setUrl(title,value)
   if (value.length === 0) setResults(activeList, prefix, title)
   else setResults(filterResults(activeList, value), prefix, title)
 }
@@ -143,4 +143,18 @@ function throttle(fn, threshhold, scope) {
     }
   }
 }
+
+function setUrl(list,terms){
+  location.hash = list+'/'+terms
+}
+
+function parseUrl(){
+  var parts = (location.hash||'').replace('#','').split('/')
+  var obj = {list:false,search:''}
+  if(parts.length === 1) return obj
+  obj.list = parts[0]
+  obj.search = parts[1]
+  return obj
+}
+
 
