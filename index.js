@@ -1,11 +1,17 @@
-var header = document.querySelector('.column-header')
-var results = document.querySelector('.results-list')
-var openMenuButton = document.querySelector('.open-menu')
-var searchOptions = document.querySelector('.search-by')
-var hash = (window.location.hash||'').replace('#','')
+var require = document.querySelector
+var header = require('.column-header')
+var results = require('.results-list')
+var openMenuButton = require('.open-menu')
+var searchOptions = require('.search-by')
+var contentContainer = require('.app')
+var inputEl = require('input')
+var openLeft = require('#open-left')
+var snapDrawer = require('.snap-drawer')
+
+var hash = (window.location.hash || '').replace('#', '')
 
 var snapper = new Snap({
-  element: document.querySelector('.app'),
+  element: contentContainer,
   disable: 'right'
 })
 
@@ -42,18 +48,18 @@ var lists = {
 var prefix = "eat with"
 var title = "ingredients"
 var activeList = lists.ingredients()
-var input = document.querySelector('input')
+var input = inputEl
 
 input.value = hash
 
-updateResults(input.value,activeList,prefix,title)
+updateResults(input.value, activeList, prefix, title)
 
 input.addEventListener('keyup', throttle(function(e) {
-  updateResults(input.value,activeList,prefix,title)
+  updateResults(input.value, activeList, prefix, title)
 }, 1000))
 
 
-addEvent(document.querySelector('#open-left'), 'click', function(){
+addEvent(openLeft, 'click', function(){
   if (snapper.state().state === 'closed') snapper.open('left')
   else snapper.close('left')
 })
@@ -67,7 +73,7 @@ addEvent(searchOptions, 'click', function(e) {
     snapper.close('left')
     activeList = lists[searchBy]()
     input.value = ''
-    updateResults('',activeList, prefix, title)
+    updateResults('', activeList, prefix, title)
   }
   return false
 })
@@ -75,7 +81,7 @@ addEvent(searchOptions, 'click', function(e) {
 function makeCrossBrowserCompatible() {
   // https://github.com/piatra/flavors/commit/c21bd731e6572ddce6d5c50ceb543fc8b037f559
   if (navigator.userAgent.match(/Android 2/i)) {
-    document.querySelector('.snap-drawer').style.overflow = 'inherit'
+    snapDrawer.style.overflow = 'inherit'
   }
 }
 
@@ -110,7 +116,7 @@ function filterResults(objs, str) {
   return matches
 }
 
-function updateResults(value,activeList,prefix,title){
+function updateResults(value, activeList, prefix, title){
   location.hash = value
   if (value.length === 0) setResults(activeList, prefix, title)
   else setResults(filterResults(activeList, value), prefix, title)
