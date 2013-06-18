@@ -1,12 +1,11 @@
-var require = document.querySelector
-var header = require('.column-header')
-var results = require('.results-list')
-var openMenuButton = require('.open-menu')
-var searchOptions = require('.search-by')
-var contentContainer = require('.app')
-var inputEl = require('input')
-var openLeft = require('#open-left')
-var snapDrawer = require('.snap-drawer')
+var header = document.querySelector('.column-header')
+var results = document.querySelector('.results-list')
+var openMenuButton = document.querySelector('.open-menu')
+var searchOptions = document.querySelector('.search-by')
+var contentContainer = document.querySelector('.app')
+var inputEl = document.querySelector('input')
+var openLeft = document.querySelector('#open-left')
+var snapDrawer = document.querySelector('.snap-drawer')
 
 var hash = (window.location.hash || '').replace('#', '')
 
