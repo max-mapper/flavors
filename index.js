@@ -2,6 +2,7 @@ var header = document.querySelector('.column-header')
 var results = document.querySelector('.results-list')
 var openMenuButton = document.querySelector('.open-menu')
 var searchOptions = document.querySelector('.search-by')
+var hash = (window.location.hash||'').replace('#','')
 
 var snapper = new Snap({
   element: document.querySelector('.app'),
@@ -41,13 +42,14 @@ var lists = {
 var prefix = "eat with"
 var title = "ingredients"
 var activeList = lists.ingredients()
-setResults(activeList, prefix, title)
-
 var input = document.querySelector('input')
 
+input.value = hash
+
+updateResults(input.value,activeList,prefix,title)
+
 input.addEventListener('keyup', throttle(function(e) {
-  if (input.value.length === 0) setResults(activeList, prefix, title)
-  else setResults(filterResults(activeList, input.value), prefix, title)
+  updateResults(input.value,activeList,prefix,title)
 }, 1000))
 
 
@@ -64,7 +66,8 @@ addEvent(searchOptions, 'click', function(e) {
   if (searchBy) {
     snapper.close('left')
     activeList = lists[searchBy]()
-    setResults(activeList, prefix, title)
+    input.value = ''
+    updateResults('',activeList, prefix, title)
   }
   return false
 })
@@ -105,6 +108,12 @@ function filterResults(objs, str) {
     if (obj.description.toLowerCase().match(str)) matches.push(obj)
   })
   return matches
+}
+
+function updateResults(value,activeList,prefix,title){
+  location.hash = value
+  if (value.length === 0) setResults(activeList, prefix, title)
+  else setResults(filterResults(activeList, value), prefix, title)
 }
 
 function throttle(fn, threshhold, scope) {
