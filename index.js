@@ -8,6 +8,8 @@ var snapper = new Snap({
   disable: 'right'
 })
 
+makeCrossBrowserCompatible()
+
 var lists = {
   ingredients: function getAllIngredients() {
     return flavors.ingredients.map(function(ingredient) {
@@ -66,6 +68,13 @@ addEvent(searchOptions, 'click', function(e) {
   }
   return false
 })
+
+function makeCrossBrowserCompatible() {
+  // https://github.com/piatra/flavors/commit/c21bd731e6572ddce6d5c50ceb543fc8b037f559
+  if (navigator.userAgent.match(/Android 2/i)) {
+    document.querySelector('.snap-drawer').style.overflow = 'inherit'
+  }
+}
 
 function addEvent(element, eventName, func) {
   if (element.addEventListener) {
