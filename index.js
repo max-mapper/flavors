@@ -116,7 +116,7 @@ function filterResults(objs, str) {
 }
 
 function updateResults(value, activeList, prefix, title){
-  setUrl(title,value)
+  setUrl(title, value)
   if (value.length === 0) setResults(activeList, prefix, title)
   else setResults(filterResults(activeList, value), prefix, title)
 }
@@ -144,17 +144,15 @@ function throttle(fn, threshhold, scope) {
   }
 }
 
-function setUrl(list,terms){
-  location.hash = list+'/'+terms
+function setUrl(list, terms) {
+  location.hash = list + '/' + terms
 }
 
 function parseUrl(){
-  var parts = (location.hash||'').replace('#','').split('/')
-  var obj = {list:false,search:''}
-  if(parts.length === 1) return obj
+  var parts = (location.hash || '').replace('#', '').split('/')
+  var obj = { list: false, search: '' }
+  if (parts.length === 1) return obj
   obj.list = parts[0]
   obj.search = parts[1]
   return obj
 }
-
-
