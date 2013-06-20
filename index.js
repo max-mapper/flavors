@@ -1,3 +1,7 @@
+
+// assumes you have the crossfilter.js bundle loaded
+var crossfilter = require('crossfilter')
+
 var header = document.querySelector('.column-header')
 var results = document.querySelector('.results-list')
 var openMenuButton = document.querySelector('.open-menu')
@@ -16,7 +20,7 @@ makeCrossBrowserCompatible()
 
 var lists = {
   ingredients: function getAllIngredients() {
-    return flavors.ingredients.map(function(ingredient) {
+    return getList(flavors.ingredients, function(ingredient) {
       return {
         title: ingredient.ingredient,
         description: ingredient.complements,
@@ -25,7 +29,7 @@ var lists = {
     })
   },
   seasonings: function getAllSeasonings() {
-    return flavors.seasonings.map(function(seasoning) {
+    return getList(flavors.seasonings, function(seasoning) {
       return {
         title: seasoning.seasoning,
         description: seasoning.complements
@@ -33,7 +37,7 @@ var lists = {
     })
   },
   regions: function getAllRegions() {
-    return flavors.regions.map(function(region) {
+    return getList(flavors.regions, function(region) {
       return {
         title: region.region,
         description: region.ingredients
@@ -46,7 +50,7 @@ var url = parseUrl()
 var input = inputEl
 
 var prefix = "eat with"
-var title = url.list||"ingredients"
+var title = url.list || "ingredients"
 var activeList = lists.ingredients()
 if(lists[url.list]) activeList = lists[url.list]()
 
@@ -54,9 +58,9 @@ input.value = url.search
 
 updateResults(input.value, activeList, prefix, title)
 
-input.addEventListener('keyup', throttle(function(e) {
+input.addEventListener('keyup', function(e) {
   updateResults(input.value, activeList, prefix, title)
-}, 1000))
+})
 
 addEvent(openLeft, 'click', function(){
   if (snapper.state().state === 'closed') snapper.open('left')
@@ -71,11 +75,18 @@ addEvent(searchOptions, 'click', function(e) {
   if (searchBy) {
     snapper.close('left')
     activeList = lists[searchBy]()
-    
     updateResults(input.value, activeList, prefix, title)
   }
   return false
 })
+
+function getList(objs, func) {
+  var list = objs.map(func)
+  var xf = crossfilter(list)
+  xf.title = xf.dimension(function(d) { return d.title })
+  xf.description = xf.dimension(function(d) { return d.description })
+  return xf
+}
 
 function makeCrossBrowserCompatible() {
   // https://github.com/piatra/flavors/commit/c21bd731e6572ddce6d5c50ceb543fc8b037f559
@@ -95,7 +106,7 @@ function addEvent(element, eventName, func) {
 function setResults(objs, itemPrefix, titleName) {
   results.innerHTML = ''
   var htmls = ''
-  objs.map(function(obj) {
+  objs.title.top(Infinity).reverse().map(function(obj) {
     htmls += '<li class="topcoat-list__item">'
       + '<span class="title">' + obj.title + '</span>'
       + ' - ' + itemPrefix + ' <span class="description">' + obj.description + '</span>'
@@ -106,19 +117,21 @@ function setResults(objs, itemPrefix, titleName) {
 }
 
 function filterResults(objs, str) {
-  var matches = []
   str = str.trim().toLowerCase()
-  objs.map(function(obj) {
-    if (obj.title.trim().toLowerCase().match(str)) matches.push(obj)
-    if (obj.description.toLowerCase().match(str)) matches.push(obj)
-  })
-  return matches
+  if (str.length > 0) objs.title.filterRange([str, str + String.fromCharCode(str.charCodeAt(0) + 1)])
+  else objs.title.filterAll()
+  return
 }
 
 function updateResults(value, activeList, prefix, title){
   setUrl(title, value)
-  if (value.length === 0) setResults(activeList, prefix, title)
-  else setResults(filterResults(activeList, value), prefix, title)
+  if (value.length === 0) {
+    filterResults(activeList, value)
+    setResults(activeList, prefix, title)
+  } else {
+    filterResults(activeList, value)
+    setResults(activeList, prefix, title)
+  }
 }
 
 function throttle(fn, threshhold, scope) {
