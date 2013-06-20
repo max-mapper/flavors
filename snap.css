@@ -47,6 +47,8 @@
 .snap-drawer-left {
   left: 0;
   z-index: 1;
+  position: fixed;
+  top:0;
 }
 
 .snap-drawer-right {
